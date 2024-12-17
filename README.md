@@ -1,27 +1,22 @@
-> ["I'd rather write code than papers."](https://www.cwi.nl/en/stories/interview-guido-van-rossum-201cid-rather-write-code-than-papers201d/) 
-> - Guido van Rossum
+> ["I'd rather write code than papers."](https://www.cwi.nl/en/stories/interview-guido-van-rossum-201cid-rather-write-code-than-papers201d/)  
+> — Guido van Rossum
 
-## Ramūnas Girdziušas' Projects
+# My Projects
+
+Ramunas Girdziusas
 
 aabbtree77 at gmail.com
 
-[CV (React Show-off)](https://aabbtree77.github.io/cv/), [resume.pdf](https://aabbtree77.github.io/pdfs/RamunasGirdziusasResume.pdf), [cv.pdf](https://aabbtree77.github.io/pdfs/RamunasGirdziusasCV.pdf)
-
-<div style="display: flex; justify-content: flex-start">
-  <div style="font-size: 1rem;">Last Update: December 2024</div>
-</div>
+[CV (React show-off)](https://aabbtree77.github.io/cv/), [resume.pdf](https://aabbtree77.github.io/pdfs/RamunasGirdziusasResume.pdf), [cv.pdf](https://aabbtree77.github.io/pdfs/RamunasGirdziusasCV.pdf)
 
 I studied electrical engineering in Lithuania from 1994 to 1999, followed by research in machine learning in Finland from 2000 to 2008.
-
 Later I did three postdoc projects and came back to where I belong ;). 
 
-My goal is to become a [software engineer](https://1x.engineer/) as I am mostly interested in programming languages and engineering systems. Without a compiler everything is unnecessarily hard: [algebra](https://aabbtree77.github.io/tensors/), computer science metanotation, uncodified business processes...
+My goal is to become a [software engineer](https://1x.engineer/). Without a compiler everything is unnecessarily hard: [algebra](https://aabbtree77.github.io/tensors/), computer science metanotation, uncodified business processes...
 
 An ideal work for me is a rewrite and downscaling, preferably in something static and GC-based.
 
 Take a look at some of my work in [embedded software](https://github.com/aabbtree77/adast), [IoT](https://github.com/aabbtree77/esp32-vpn), [3D](https://github.com/aabbtree77/twinpeekz2), and [webdev](https://github.com/aabbtree77/law2).
-
-# Selected Projects
 
 ## Work in Progress
 
@@ -41,7 +36,7 @@ Vilnius, 2023-2024.
 
 A MERN app to [log](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of this homepage. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind.
 
-It took me about a week or two to cobble up everything and get a fully working web app with the help of ChatGPT. A month at most with learning. Then I started reading that Js is not good, use TypeScript instead, MongoDB was a mistake, SQLite vs PostgreSQL. A year later not much is done and I am still figuring out "the right way" around 3-5 Js/Ts runtimes, eleven build systems, two module types, frameworks and metaframeworks, caching, React (TanStack) Query vs server components, React router vs Next.js routers, endless databases, DDOS, JWT vs session cookies, passwords or OAuth 2, and on and on it goes.
+It took me about a week or two to cobble up everything and get a fully working web app with the help of ChatGPT. A month at most with learning. Then I started reading that Js is not good, use TypeScript instead, MongoDB was a mistake, SQLite vs PostgreSQL. A year later not much is done and I am still figuring out "the right way" around 3-5 Js/Ts runtimes, eleven build systems, two module types, frameworks and metaframeworks, caching, React (TanStack) Query vs server components, React router vs Next.js routers, endless databases, DDOS, JWT vs session cookies, passwords or OAuth 2, Elixir, Gleam, is the grass greener somewhere else...
 
 When someone tells you "we got it right this time"... it feels like that hammer scene from Oldboy (2003) when an elevator door opens.
 
