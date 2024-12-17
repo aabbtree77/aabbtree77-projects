@@ -9,11 +9,11 @@ aabbtree77 at gmail.com
 
 [CV (React show-off)](https://aabbtree77.github.io/cv/), [resume.pdf](https://aabbtree77.github.io/pdfs/RamunasGirdziusasResume.pdf), [cv.pdf](https://aabbtree77.github.io/pdfs/RamunasGirdziusasCV.pdf)
 
-I studied electrical engineering in Lithuania from 1994 to 1999, followed by research in machine learning in Finland from 2000 to 2008, three postdoc projects, and come back in 2014. 
+I studied electrical engineering in Lithuania from 1994 to 1999, researched machine learning in Finland from 2000 to 2008, completed three postdoc projects, and returned in 2014.
 
-My goal is to become a [software engineer](https://1x.engineer/). Without a compiler everything is unnecessarily hard: [algebra](https://aabbtree77.github.io/tensors/), computer science metanotation... Github, not arXiv.
+My goal is to become a [software engineer](https://1x.engineer/). Without a compiler everything is obscured by clouds: [algebra](https://aabbtree77.github.io/tensors/), computer science metanotation... So Github, not arXiv.
 
-The ideal work for me is a rewrite and downscaling, preferably in something static and GC-based.
+The ideal work for me is a rewrite and downscaling, in something static and GC-based.
 
 Take a look at some of my work in [embedded software](https://github.com/aabbtree77/adast), [IoT](https://github.com/aabbtree77/esp32-vpn), [3D](https://github.com/aabbtree77/twinpeekz2), and [webdev](https://github.com/aabbtree77/law2).
 
@@ -21,7 +21,7 @@ Take a look at some of my work in [embedded software](https://github.com/aabbtre
 
 Vilnius, Now.
 
-Learning to build web apps in a sound way, back to fundamentals. My interim release includes [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. Nothing fancy and more work than with a metaframework, probably with bugs, but at least it feels like learning something, and I won't need to worry about DDOS caps when the code gets hosted on the VPS.
+Learning to build web apps in a sound way, back to fundamentals. My interim release includes [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. Nothing fancy and more work than with a metaframework, probably with bugs, but at least it feels like learning something, and one won't need to worry about DDOS caps when the code gets hosted on the VPS.
 
 ## [lawtrust.eu](https://lawtrust.eu/): [lawlt.eu](http://www.lawlt.eu/) [Improved](https://github.com/aabbtree77/law2)
 
@@ -57,9 +57,7 @@ When someone tells you "we got it right this time"... remember the protagonist's
 
 Vilnius, 2020 - 2024.
 
-A joint work with Saulius Rakauskas (Infovega). We have been maintaining a real factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc). The only really useful code that I wrote in my entire career so far. Zero stars, downloads, citations, and yet it improved the daily lives of factory workers.
-
-Comparing this project and my work in France to the endless "life searches", the major conclusion is that I am miserable when I am left to my own devices. It is much better to work in a tandem.
+A joint work with Saulius Rakauskas (Infovega). We have been maintaining a real factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc). The only really useful code that I wrote in my entire career so far. Zero stars, downloads, citations, and yet it improves the daily lives of factory workers.
 
 ## [P2P Connectivity](https://github.com/aabbtree77/esp32-vpn)
 
@@ -79,17 +77,17 @@ Implemented volumetric lighting in [Go](https://github.com/aabbtree77/twinpeekz)
 
 Note: This is a real time rendering pipeline which combines multiple stages and makes sure everything fits into 16ms frames. It will save a lot of time for someone who wants to start building a 3D engine while being lost at downscaling any existing ones. The code includes neither ECS, nor physics, which could be a pro. One of my goals was also to test the impact of Go's garbage collector in real time rendering. 
 
-OpenGL, Vulkan, or WebGPU? Gave up on this, but note that they all spread the state, and the languages we use are not designed for these backends at all. RenderDoc is essential, but this is virtually like writing in Assembly. Reddit votings indicate that Vulkan is still less used than OpenGL, but it already helps to run [d3d9-d3d11 on Linux](https://github.com/doitsujin/dxvk/issues/3789). OpenGL still has a serious advantage due to ["Learn OpenGL"](https://learnopengl.com/). Generate Vulkan code with ChatGPT?
+OpenGL, Vulkan, or WebGPU? Gave up on this, but note that they all spread the state, and the languages we use are not designed for these backends at all. RenderDoc is essential, but this is virtually like writing in assembly. Reddit votings indicate that Vulkan is still less used than OpenGL, but it already helps to run [d3d9-d3d11 on Linux](https://github.com/doitsujin/dxvk/issues/3789). OpenGL still has a serious advantage due to ["Learn OpenGL"](https://learnopengl.com/). Generate Vulkan code with ChatGPT?
 
 ## [The Algebra of Tensor Fields](https://aabbtree77.github.io/tensors/)
 
 Vilnius, 2015 - 2024.
 
-Verified tensor algebras of Donn G. Shankland (1970). Spinors are left as an exercise for the reader ;). Feel free to include the PCT transforms, gauge fixing subtleties which even Maxwell had missed, "GR frames", multiple particles, interactions. [Supersymmetry?](https://arxiv.org/abs/1212.5605).
+Verified tensor algebras of Donn G. Shankland (1970). Spinors are left as an exercise for the reader ;). Feel free to include the PCT transforms, gauge fixing subtleties which even Maxwell had missed, "GR frames/observers", [supersymmetry?](https://arxiv.org/abs/1212.5605) After all this work, all we would have is still just a free wave or a kinematic space. We have not added any interactions yet ;). Then quantization, S-matrix, and again redo everything: PCT, Lorentz, gauge fixing...  
 
 ["Après la montagne, il y a la montagne..." &#8722; Desireless, Hari om Ramakrishna (1989)](https://www.youtube.com/watch?v=18rZv8qWZqA)
 
-This looks hopeless as theory is no longer compressing anything. It is healthier to trace significant events as they appear historically. We have endless frameworks, but we do not have that many key experiments. Also it makes sense to see how Gamow, Sakharov, and maybe even Gribov have made progress. People who made estimates and got some "aha moments". There must be a way out of this contemporary arXiv madness.
+This looks hopeless as theory is no longer compressing anything. It is healthier to trace significant events as they appear historically. We have endless frameworks, but we do not have many key experiments. Also it makes sense to see how Gamow, Sakharov, and maybe even Gribov have made progress. Those who were into estimates and balancing between math and physics, rather than "nogo theorems". There must be a way out of this arXiv madness.
 
 ## [MNIST-0.17 (Python)](https://github.com/aabbtree77/MNIST-0.17)
 
@@ -99,7 +97,7 @@ Confirmed that Jonas Matuzas' CNN model is one of the most convincing results in
 
 It is such a tragicomedy to observe how GPUs trashed everything we believed in. Linear is better than quadratic, polynomial, nonlinear, or multilayer-nonlinear? Float64 is vital in numerical analysis? All the NIPS champions with fancy SGD theory appendices as if any of this mattered.
 
-We get a new era which is about the GPU bottleneck analysis, Torch expression compiling, long running platforms with large GPU banks,  experiment planning. Big systems: Lc0, AlphaFold, Stable Diffusion, ChatGPT... Big data. [Big meaning?](https://reestheskin.me/rarer-than-the-dodo/big-meaning-not-big-data-alan-kay/)
+We get a new era which is about the GPU bottleneck analysis, Torch expression compiling, long running platforms with large GPU banks,  experiment planning. Big systems: Lc0, AlphaFold, Stable Diffusion, ChatGPT... Big data. [Big meaning?](https://youtu.be/gTAghAJcO1o?t=167)
 
 ## [3D Shape Normalization (Matlab)](https://diglib.eg.org/handle/10.2312/3dor.20141044.009-015)
 
@@ -110,7 +108,7 @@ The lab was interesting in that everybody was forced to learn at least a bit of 
 
 I wasted a lot of time trying to apply the MDS-like algorithms on the [Protein Data Bank](https://www.rcsb.org/), coding things in C, thinking of the data set myopically as some low-level filtering problem which supposedly needed scaling. Little I knew that at the same time AlphaFold was already being developed...
 
-We are often just a few steps away from something great. In my case, I missed the DNA sequence data (being narrow minded and more into physics while totally ignoring chemistry and biology), and also could not overcome the belief that neural net convolutions could work well only on the continuous data. 
+We are often just a few steps away from something great. In my case, I missed the DNA sequence data (being narrow minded and ignoring chemistry and biology), and also could not overcome the belief that neural net convolutions could work well only on the continuous data. 
 
 ## [Cloud Computing (Scilab)](https://hal.archives-ouvertes.fr/hal-00723427)
 
