@@ -9,12 +9,11 @@ aabbtree77 at gmail.com
 
 [CV (React show-off)](https://aabbtree77.github.io/cv/), [resume.pdf](https://aabbtree77.github.io/pdfs/RamunasGirdziusasResume.pdf), [cv.pdf](https://aabbtree77.github.io/pdfs/RamunasGirdziusasCV.pdf)
 
-I studied electrical engineering in Lithuania from 1994 to 1999, followed by research in machine learning in Finland from 2000 to 2008.
-Later I did three postdoc projects and came back to where I belong ;). 
+I studied electrical engineering in Lithuania from 1994 to 1999, followed by research in machine learning in Finland from 2000 to 2008, three postdoc projects, and come back in 2014. 
 
-My goal is to become a [software engineer](https://1x.engineer/). Without a compiler everything is unnecessarily hard: [algebra](https://aabbtree77.github.io/tensors/), computer science metanotation, uncodified business processes...
+My goal is to become a [software engineer](https://1x.engineer/). Without a compiler everything is unnecessarily hard: [algebra](https://aabbtree77.github.io/tensors/), computer science metanotation... Github, not arXiv.
 
-An ideal work for me is a rewrite and downscaling, preferably in something static and GC-based.
+The ideal work for me is a rewrite and downscaling, preferably in something static and GC-based.
 
 Take a look at some of my work in [embedded software](https://github.com/aabbtree77/adast), [IoT](https://github.com/aabbtree77/esp32-vpn), [3D](https://github.com/aabbtree77/twinpeekz2), and [webdev](https://github.com/aabbtree77/law2).
 
@@ -22,7 +21,7 @@ Take a look at some of my work in [embedded software](https://github.com/aabbtre
 
 Vilnius, Now.
 
-Still learning some ways to build web GUIs and services. My interim release includes [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free user authentication.
+Learning to build web apps in a sound way, back to fundamentals. My interim release includes [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. Nothing fancy and more work than with a metaframework, probably with bugs, but at least it feels like learning something, and I won't need to worry about DDOS caps when the code gets hosted on the VPS.
 
 ## [lawtrust.eu](https://lawtrust.eu/): [lawlt.eu](http://www.lawlt.eu/) [Improved](https://github.com/aabbtree77/law2)
 
@@ -30,13 +29,13 @@ Vilnius, February 2024.
 
 A multilingual website for a lawyer who speaks nine languages. Static HTML, Tailwind CSS, [gomarkdown](https://github.com/gomarkdown/markdown), porkbun.com, and github pages.
 
-This project was an eye opener about what the SEO and a fair search mean in practice as this was a rewrite of an older web site with similar data and the same domain extension ".eu".
+This project was an eye opener about what the SEO and fair search mean in practice:
 
-- [http://www.lawlt.eu/](http://www.lawlt.eu/) - Built around 2012, no HTTPS with a "not secure" mark, most of the data is under PHP "CMS Made Simple". Google was paid to advertise it on Google Ads from time to time.
+- [http://www.lawlt.eu/](http://www.lawlt.eu/) - Built around 2012, no HTTPS, most of the data is inside PHP CMS called "CMS Made Simple". Google was paid to advertise it on search from time to time.
 
-- [https://lawtrust.eu/](https://lawtrust.eu/) - Built in 2024, HTTPS, there is more data and all of it directly inside HTML hosted on github.com, inside a payment-free repo. Github is owned by Microsoft. Google was never paid to advertise it.
+- [https://lawtrust.eu/](https://lawtrust.eu/) - Built in 2024, HTTPS, similar data and all of it directly inside HTML hosted on github.com. Github is owned by Microsoft. Google was never paid to advertise it.
 
-Google search for "lawyer vilnius": lawlt.eu - Page 3, lawtrust.eu - No results in the first twelve (!) pages.
+Google search for "lawyer vilnius": lawlt.eu - Page 3, lawtrust.eu - no results!
 
 Bing's identical search: lawlt.eu  - Page 11, lawtrust.eu - Page 1!
 
@@ -48,9 +47,11 @@ Vilnius, 2023-2024.
 
 A MERN app to [log](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of this homepage. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind.
 
-It took me about a week or two to cobble up everything and get a fully working web app with the help of ChatGPT. A month at most with learning. Then I started looking for "the right way", VPS vs cloud, Js vs Ts, 3-5 Js/Ts runtimes to begin with, fetch vs axios vs React (TanStack) Query vs server components, React router vs Next.js routers, endless ORMS, databases and services, DDOS, caps, JWT vs session cookies, passwords or OAuth 2, Elixir, Gleam... OMG...
+It took me about a week or two to cobble up everything and get a fully working web app with the help of ChatGPT, no React. 
 
-When someone tells you "we got it right this time"... it feels like that hammer scene from Oldboy (2003) when the elevator door opens.
+Then I started looking for "the right way" since MERN is supposedly obsolete. A year has passed, and now I am only lost more than ever.
+
+When someone tells you "we got it right this time"... remember the protagonist's face in the hammer scene from Oldboy (2003), when the elevator door opens.
 
 ## [Paper Guillotine](https://github.com/aabbtree77/adast)
 
