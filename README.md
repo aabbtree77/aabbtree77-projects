@@ -1,5 +1,5 @@
 > "Let it go. We have bigger fights."  
-> - Reacher (2022)
+> \- Reacher (2022)
 
 # My Projects
 
@@ -9,12 +9,7 @@ Ramunas Girdziusas, aabbtree77 at gmail.com
 
 I studied electrical engineering in Lithuania from 1994 to 1999, researched machine learning in Finland from 2000 to 2008, completed three postdoc projects, and returned in 2014.
 
-My goal is to become a [1x engineer](https://1x.engineer/). Without a compiler everything is obscured by clouds: Homotopy, homology, holonomy, monodromy... [Computer science metanotation.](https://www.youtube.com/watch?v=dCuZkaaou0Q&ab_channel=ClojureTV) 
-
-So Github, not arXiv.
-
-> ["I'd rather write code than papers."](https://www.cwi.nl/en/stories/interview-guido-van-rossum-201cid-rather-write-code-than-papers201d/)    
-> - Guido van Rossum
+My goal is to become a [1x engineer](https://1x.engineer/).
 
 Take a look at some of my work in [embedded software](https://github.com/aabbtree77/adast), [IoT](https://github.com/aabbtree77/esp32-vpn), [3D](https://github.com/aabbtree77/twinpeekz2), and [webdev](https://github.com/aabbtree77/law2).
 
@@ -56,7 +51,7 @@ When someone tells you "we got it right this time"... remember the protagonist's
 
 Vilnius, 2020 - 2024.
 
-A joint work with Saulius Rakauskas (Infovega). We have been maintaining a **real** factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc). Zero stars, downloads, citations, but the code is as real as it gets.
+A joint work with Saulius Rakauskas (Infovega). We have been maintaining a **real** factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc). Zero stars, downloads, citations, but the code has been controlling the Adast guillotine for several years.
 
 ## [P2P Connectivity](https://github.com/aabbtree77/esp32-vpn)
 
@@ -64,7 +59,7 @@ Vilnius, 2021 - 2022.
 
 A joint work with Saulius Rakauskas (Infovega): A remote plant watering system with ESP32, MicroPython, Mosquitto MQTT, Ubuntu and [awl](https://github.com/anywherelan/awl) with golibp2p. Numerous tests of [hole punching](<https://en.wikipedia.org/wiki/Hole_punching_(networking)>) through layers of routers with the use of the P2P network other than torrents, to control an ESP32 device globally, without obscure 3rd party services.
 
-The technology is there, but the killer app is not. In a way, this is about downscaling the ESP RainMaker. I would remove the ESP32 part entirely now and go for the embedded Linux boards. A recent Indian Morse code broadcasting ring on a finger deserves to be mentioned in the Appendix section on the applications of low RAM devices.
+This is about downscaling the ESP RainMaker in order to gain the control over a complete communication stack, to be ready to debug the system when "the shit hits the fan". I would remove the ESP32 part entirely now and go for the embedded Linux boards. A recent Indian Morse code broadcasting ring on a finger deserves to be mentioned in the Appendix section on the applications of low RAM devices.
 
 ## [Volumetrically-Lit Sponza (Go, Nim)](https://github.com/aabbtree77/twinpeekz2)
 
