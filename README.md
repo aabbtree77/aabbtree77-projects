@@ -11,9 +11,11 @@ aabbtree77 at gmail.com
 
 I studied electrical engineering in Lithuania from 1994 to 1999, researched machine learning in Finland from 2000 to 2008, completed three postdoc projects, and returned in 2014.
 
-My goal is to become a [software engineer](https://1x.engineer/). Without a compiler everything is obscured by clouds: [algebra](https://aabbtree77.github.io/tensors/), computer science metanotation... So Github, not arXiv.
+My goal is to become a [1x engineer](https://1x.engineer/). Without a compiler everything is obscured by clouds: Homotopy, homology, holonomy, monodromy... even [basic tensors](https://aabbtree77.github.io/tensors/). [Computer science metanotation...](https://www.youtube.com/watch?v=dCuZkaaou0Q&ab_channel=ClojureTV) 
 
-The ideal work for me is a rewrite and downscaling, in something static and GC-based.
+So Github, not arXiv. If there is no code, it does not exist.
+
+The ideal work for me is a rewrite and downscaling, anything GC-based.
 
 Take a look at some of my work in [embedded software](https://github.com/aabbtree77/adast), [IoT](https://github.com/aabbtree77/esp32-vpn), [3D](https://github.com/aabbtree77/twinpeekz2), and [webdev](https://github.com/aabbtree77/law2).
 
@@ -29,7 +31,7 @@ Vilnius, February 2024.
 
 A multilingual website for a lawyer who speaks nine languages. Static HTML, Tailwind CSS, [gomarkdown](https://github.com/gomarkdown/markdown), porkbun.com, and github pages.
 
-This project was an eye opener about what the SEO and fair search mean in practice:
+This project was tedious due to 18 text sections in 9 languages. It was also an eye opener about what the SEO and fair search mean in practice:
 
 - [http://www.lawlt.eu/](http://www.lawlt.eu/) - Built around 2012, no HTTPS, most of the data is inside PHP CMS called "CMS Made Simple". Google was paid to advertise it on search from time to time.
 
@@ -38,8 +40,6 @@ This project was an eye opener about what the SEO and fair search mean in practi
 Google search for "lawyer vilnius": lawlt.eu - Page 3, lawtrust.eu - no results!
 
 Bing's identical search: lawlt.eu  - Page 11, lawtrust.eu - Page 1!
-
-Note that Google does not disclose a web site's page rank anymore.
 
 ## [Web-Log](https://github.com/aabbtree77/miniguestlog)
 
@@ -57,7 +57,7 @@ When someone tells you "we got it right this time"... remember the protagonist's
 
 Vilnius, 2020 - 2024.
 
-A joint work with Saulius Rakauskas (Infovega). We have been maintaining a real factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc). The only really useful code that I wrote in my entire career so far. Zero stars, downloads, citations, and yet it improves the daily lives of factory workers.
+A joint work with Saulius Rakauskas (Infovega). We have been maintaining a **real** factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc). Zero stars, downloads, citations, but the code is as real as it gets.
 
 ## [P2P Connectivity](https://github.com/aabbtree77/esp32-vpn)
 
@@ -65,9 +65,7 @@ Vilnius, 2021 - 2022.
 
 A joint work with Saulius Rakauskas (Infovega): A remote plant watering system with ESP32, MicroPython, Mosquitto MQTT, Ubuntu and [awl](https://github.com/anywherelan/awl) with golibp2p. Numerous tests of [hole punching](<https://en.wikipedia.org/wiki/Hole_punching_(networking)>) through layers of routers with the use of the P2P network other than torrents, to control an ESP32 device globally, without obscure 3rd party services.
 
-The technology is there, but the killer app is not, as always. In a way, this is about downscaling the ESP RainMaker. Building something that approximates an opaque communication system out of basic well-known FOSS blocks which can be isolated and controlled when "the shit hits the fan". 
-
-I would perhaps remove the ESP32 part almost entirely now and go for the embedded Linux boards instead. A recent Indian Morse code broadcasting ring on a finger deserves to be mentioned in the Appendix section on the applications of low RAM devices.
+The technology is there, but the killer app is not. In a way, this is about downscaling the ESP RainMaker. I would remove the ESP32 part entirely now and go for the embedded Linux boards. A recent Indian Morse code broadcasting ring on a finger deserves to be mentioned in the Appendix section on the applications of low RAM devices.
 
 ## [Volumetrically-Lit Sponza (Go, Nim)](https://github.com/aabbtree77/twinpeekz2)
 
@@ -77,38 +75,36 @@ Implemented volumetric lighting in [Go](https://github.com/aabbtree77/twinpeekz)
 
 Note: This is a real time rendering pipeline which combines multiple stages and makes sure everything fits into 16ms frames. It will save a lot of time for someone who wants to start building a 3D engine while being lost at downscaling any existing ones. The code includes neither ECS, nor physics, which could be a pro. One of my goals was also to test the impact of Go's garbage collector in real time rendering. 
 
-OpenGL, Vulkan, or WebGPU? Gave up on this, but note that they all spread the state, and the languages we use are not designed for these backends at all. RenderDoc is essential, but this is virtually like writing in assembly. Reddit votings indicate that Vulkan is still less used than OpenGL, but it already helps to run [d3d9-d3d11 on Linux](https://github.com/doitsujin/dxvk/issues/3789). OpenGL still has a serious advantage due to ["Learn OpenGL"](https://learnopengl.com/). Generate Vulkan code with ChatGPT?
+[OpenGL, Vulkan, or WebGPU?](https://www.youtube.com/watch?v=MYi-wpcy0h0&ab_channel=JonathanBlowClips) Gave up on this, but note that they all spread the state, and the languages we use are not designed for these backends at all. RenderDoc is essential, but this is virtually like writing in assembly. Reddit votings indicate that Vulkan is still less used than OpenGL, but it already helps to run [d3d9-d3d11 on Linux](https://github.com/doitsujin/dxvk/issues/3789). OpenGL still has a serious advantage due to ["Learn OpenGL"](https://learnopengl.com/). Generate Vulkan code with ChatGPT?
 
 ## [The Algebra of Tensor Fields](https://aabbtree77.github.io/tensors/)
 
 Vilnius, 2015 - 2024.
 
-Verified tensor algebras of Donn G. Shankland (1970). Spinors are left as an exercise for the reader ;). Feel free to include the PCT transforms, gauge fixing subtleties which even Maxwell had missed, "GR frames/observers", [supersymmetry?](https://arxiv.org/abs/1212.5605) After all this work, all we would have is still just a free wave or a kinematic space. We have not added any interactions yet ;). Then quantization, S-matrix, and again redo everything: PCT, Lorentz, gauge fixing...  
+Verified tensor algebras of Donn G. Shankland (1970). Spinors are left as an exercise for the reader ;). Feel free to include the PCT transforms, gauge fixing subtleties, "GR frames/observers", [supersymmetry?](https://arxiv.org/abs/1212.5605) After all this work, all we have is barely a free wave or a "kinematic space". We have not added any interactions yet ;). Quantization, I probably do not even want to know what that means.  
 
 ["Après la montagne, il y a la montagne..." &#8722; Desireless, Hari om Ramakrishna (1989)](https://www.youtube.com/watch?v=18rZv8qWZqA)
 
-This looks hopeless as theory is no longer compressing anything. It is healthier to trace significant events as they appear historically. We have endless frameworks, but we do not have many key experiments. Also it makes sense to see how Gamow, Sakharov, and maybe even Gribov have made progress. Those who were into estimates and balancing between math and physics, rather than "nogo theorems". There must be a way out of this arXiv madness.
+This looks hopeless as theory is no longer compressing anything. It is healthier to trace significant events as they appear historically. We have endless formalisms, but we do not have many key experiments. There must be a way out of this arXiv madness.
 
 ## [MNIST-0.17 (Python)](https://github.com/aabbtree77/MNIST-0.17)
 
 Vilnius, 2014 - 2015.
 
-Confirmed that Jonas Matuzas' CNN model is one of the most convincing results in the MNIST digit recognition. Built my own kriging and Adam Coates et al. features-based "autoML" image recognition system which was sound, but not competitive enough. It relied on the block-Choleski inverse of a large covariance matrix which may not fit into 64GB RAM. It was hyperparameter-free as I learned in France it was better to estimate the variance parameter in the Gaussian kernel quickly from the input data instead of running the whole gradient ascent on the maximum likelihood. However, such simple and reliable systems are hard to scale beyond O(100K) vectors. It had the error rates inferior to those of the CNNs (85% CIFAR-10 accuracy vs world records reaching over 99%).
+Confirmed that Jonas Matuzas' CNN model is one of the most convincing results in the MNIST digit recognition. Built my own kriging and Adam Coates et al. features-based "autoML" image recognition system which was sound, but not competitive enough. It relied on the block-Choleski inverse of a large covariance matrix which may not fit into 64GB RAM. It was hyperparameter-free as I learned in France it was better to estimate the variance parameter in the Gaussian kernel crudely from the input data instead of running the whole gradient ascent on the maximum likelihood. However, such simple and reliable systems are hard to scale beyond O(100K) vectors. It had the error rates inferior to those of the CNNs (85% CIFAR-10 accuracy vs world records reaching over 99%).
 
-It is such a tragicomedy to observe how GPUs trashed everything we believed in. Linear is better than quadratic, polynomial, nonlinear, or multilayer-nonlinear? Float64 is vital in numerical analysis? All the NIPS champions with fancy SGD theory appendices as if any of this mattered.
+It is such a tragicomedy to observe how GPUs trashed everything we believed in. Linear is better than quadratic, polynomial, nonlinear, or multilayer-nonlinear? Float64, FFT, Fortran, sparse matrices, numerical analysis? The whole statistics and machine learning prior to say 2010. Hidden Markov Models, Leo Breiman, Vladimir Vapnik, endless variational nonlinear Bayesian something, NIPS...
 
-We get a new era which is about the GPU bottleneck analysis, Torch expression compiling, long running platforms with large GPU banks,  experiment planning. Big systems: Lc0, AlphaFold, Stable Diffusion, ChatGPT... Big data. [Big meaning?](https://youtu.be/gTAghAJcO1o?t=167)
+We get a new era which is about the GPU bottleneck analysis, Torch expression compiling, platforms with large GPU banks, long-running experiment planning. Big systems: Lc0, AlphaFold, Stable Diffusion, ChatGPT... Big data. [Big meaning?](https://youtu.be/gTAghAJcO1o?t=167)
 
 ## [3D Shape Normalization (Matlab)](https://diglib.eg.org/handle/10.2312/3dor.20141044.009-015)
 
 PostDoc Chronicles 3: Lugano, 2013-2014. My second encounter with quadratically-constrained quadratic cost optimization, where I have mapped the "Swiss Roll" problem to the fast multipole method-based electrostatics with an approximate distance
 constraint handling (simple projections ala Karmarkar and Cimmino in linear algebra). Davide Boscaini implemented the constraint gradient exactly and pushed the error rates.
 
-The lab was interesting in that everybody was forced to learn at least a bit of the "Einsteinian motif" to consider equations on a surface or a graph. We used some tools to clean 3D meshes which was very liberating considering omnipresent Matlab. Randolf Schärfig was developing his 3D engine in C++ nearby in the same hall of cubicles.
+The lab was interesting in that everybody learned (at least a bit) about the "Einsteinian motif" to consider equations on a surface or a graph. We used some tools to clean 3D meshes which was very liberating considering omnipresent Matlab. Randolf Schärfig was developing his 3D engine in C++ nearby in the same hall of cubicles.
 
-I wasted a lot of time trying to apply the MDS-like algorithms on the [Protein Data Bank](https://www.rcsb.org/), coding things in C, thinking of the data set myopically as some low-level filtering problem which supposedly needed scaling. Little I knew that at the same time AlphaFold was already being developed...
-
-We are often just a few steps away from something great. In my case, I missed the DNA sequence data (being narrow minded and ignoring chemistry and biology), and also could not overcome the belief that neural net convolutions could work well only on the continuous data. 
+I wasted a lot of time trying to apply the MDS-like algorithms on the [Protein Data Bank](https://www.rcsb.org/), coding things in C, thinking of the data set myopically as some low-level filtering problem which supposedly needed scaling. Little I knew that at the same time AlphaFold was already being developed... 
 
 ## [Cloud Computing (Scilab)](https://hal.archives-ouvertes.fr/hal-00723427)
 
