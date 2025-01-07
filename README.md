@@ -1,21 +1,20 @@
-> ["I'd rather write code than papers."](https://www.cwi.nl/en/stories/interview-guido-van-rossum-201cid-rather-write-code-than-papers201d/)  
-> — Guido van Rossum
+> "Let it go. We have bigger fights."  
+> - Reacher (2022)
 
 # My Projects
 
-Ramunas Girdziusas
-
-aabbtree77 at gmail.com
+Ramunas Girdziusas, aabbtree77 at gmail.com
 
 [CV (React show-off)](https://aabbtree77.github.io/cv/), [resume.pdf](https://aabbtree77.github.io/pdfs/RamunasGirdziusasResume.pdf), [cv.pdf](https://aabbtree77.github.io/pdfs/RamunasGirdziusasCV.pdf)
 
 I studied electrical engineering in Lithuania from 1994 to 1999, researched machine learning in Finland from 2000 to 2008, completed three postdoc projects, and returned in 2014.
 
-My goal is to become a [1x engineer](https://1x.engineer/). Without a compiler everything is obscured by clouds: Homotopy, homology, holonomy, monodromy... even [basic tensors](https://aabbtree77.github.io/tensors/). [Computer science metanotation...](https://www.youtube.com/watch?v=dCuZkaaou0Q&ab_channel=ClojureTV) 
+My goal is to become a [1x engineer](https://1x.engineer/). Without a compiler everything is obscured by clouds: Homotopy, homology, holonomy, monodromy... [Computer science metanotation.](https://www.youtube.com/watch?v=dCuZkaaou0Q&ab_channel=ClojureTV) 
 
-So Github, not arXiv. If there is no code, it does not exist.
+So Github, not arXiv.
 
-The ideal work for me is a rewrite and downscaling, anything GC-based.
+> ["I'd rather write code than papers."](https://www.cwi.nl/en/stories/interview-guido-van-rossum-201cid-rather-write-code-than-papers201d/)    
+> - Guido van Rossum
 
 Take a look at some of my work in [embedded software](https://github.com/aabbtree77/adast), [IoT](https://github.com/aabbtree77/esp32-vpn), [3D](https://github.com/aabbtree77/twinpeekz2), and [webdev](https://github.com/aabbtree77/law2).
 
