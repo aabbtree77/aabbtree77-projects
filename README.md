@@ -23,11 +23,11 @@ Vilnius, February 2024.
 
 A multilingual website for a lawyer who speaks nine languages. Static HTML, Tailwind CSS, [gomarkdown](https://github.com/gomarkdown/markdown), porkbun.com, and github pages.
 
-This project was tedious due to 18 text sections in 9 languages. It was also an eye opener about what the SEO and fair search mean in practice:
+This project was an eye opener about what the SEO and fair search mean in practice:
 
-- [http://www.lawlt.eu/](http://www.lawlt.eu/) - Built around 2012, no HTTPS, most of the data is inside PHP CMS called "CMS Made Simple". Google was paid to advertise it on search from time to time.
+- [http://www.lawlt.eu/](http://www.lawlt.eu/) - Built around 2012, the HTTP, data inside the PHP CMS called "CMS Made Simple". Google was paid to advertise it on search from time to time.
 
-- [https://lawtrust.eu/](https://lawtrust.eu/) - Built in 2024, HTTPS, similar data and all of it directly inside HTML hosted on github.com. Github is owned by Microsoft. Google was never paid to advertise it.
+- [https://lawtrust.eu/](https://lawtrust.eu/) - Built in 2024, the HTTPS, data directly inside the HTML hosted on github.com. Github is owned by Microsoft. Google was never paid to advertise it.
 
 Google search for "lawyer vilnius": lawlt.eu - Page 3, lawtrust.eu - no results!
 
@@ -37,7 +37,7 @@ Bing's identical search: lawlt.eu  - Page 11, lawtrust.eu - Page 1!
 
 Vilnius, 2023-2024.
 
-A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of this homepage. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind.
+A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of aabbtree77.github.io. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind.
 
 It took me about a week or two to cobble up everything and get a fully working web app with the help of ChatGPT, no React. 
 
@@ -49,7 +49,7 @@ When someone tells you "we got it right this time"... remember the protagonist's
 
 Vilnius, 2020 - 2024.
 
-A joint work with Saulius Rakauskas (Infovega). We have been maintaining a **real** factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc).
+A joint work with Saulius Rakauskas (Infovega). We have been maintaining a *real* factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc).
 
 ## [P2P Connectivity](https://github.com/aabbtree77/esp32-vpn)
 
@@ -57,7 +57,7 @@ Vilnius, 2021 - 2022.
 
 A joint work with Saulius Rakauskas (Infovega): A remote plant watering system with ESP32, MicroPython, Mosquitto MQTT, Ubuntu and [awl](https://github.com/anywherelan/awl) with golibp2p. Numerous tests of [hole punching](<https://en.wikipedia.org/wiki/Hole_punching_(networking)>) through layers of routers with the use of the P2P network other than torrents, to control an ESP32 device globally, without obscure 3rd party services.
 
-I would remove the ESP32 part entirely now and go for the embedded Linux boards. A recent Indian Morse code broadcasting ring deserves to be mentioned in the Appendix section on applications of low RAM devices.
+I would remove the ESP32 and focus more on the embedded Linux boards. A recent Indian Morse code broadcasting ring deserves to be mentioned in the Appendix section on applications of low RAM devices.
 
 ## [Volumetrically-Lit Sponza (Go, Nim)](https://github.com/aabbtree77/twinpeekz2)
 
@@ -65,15 +65,15 @@ Vilnius, 2020 - 2022.
 
 Volumetric lighting in [Go](https://github.com/aabbtree77/twinpeekz) and [Nim](https://github.com/aabbtree77/twinpeekz2) (forward rendering, shadow mapping, PBR, 3D ray marching, OpenGL) following [Balázs Tóth, Tamás Umenhoffer (2009)](https://diglib.eg.org/handle/10.2312/egs.20091048.057-060), and [Tomas Öhberg (2017)](https://gitlab.com/tomasoh/100_procent_more_volume).
 
-This is a complete real time rendering pipeline which makes sure everything fits into 16ms frames. It will save a lot of time for someone who wants to start building a 3D engine while being lost at downscaling any existing ones. The code includes neither ECS, nor physics, which could be a pro. One of my goals was also to test the impact of Go's garbage collector in real time rendering. 
+The code is a complete rendering pipeline which may save time for someone who wants to start building a 3D engine while being lost at downscaling any existing ones. The code includes neither ECS, nor physics, which could be a pro. One of my goals was also to test the impact of Go's garbage collector in real time rendering. 
 
-[OpenGL, Vulkan, or WebGPU?](https://www.youtube.com/watch?v=MYi-wpcy0h0&ab_channel=JonathanBlowClips) Gave up on this, but note that they all spread the state, and the languages we use are not designed for these backends at all. RenderDoc is essential, but this is virtually like walking blind. Reddit votings indicate that Vulkan is still less used than OpenGL, but it already helps to run [d3d9-d3d11 on Linux](https://github.com/doitsujin/dxvk/issues/3789). OpenGL still has a serious advantage due to ["Learn OpenGL"](https://learnopengl.com/). Generate Vulkan code with ChatGPT?
+[OpenGL, Vulkan, or WebGPU?](https://www.youtube.com/watch?v=MYi-wpcy0h0&ab_channel=JonathanBlowClips) Gave up on this, but note that they all spread the state, and the languages we use are not designed for these backends at all. RenderDoc is essential. Reddit votings indicate that Vulkan is still less used than OpenGL, but it already helps to run [d3d9-d3d11 on Linux](https://github.com/doitsujin/dxvk/issues/3789). OpenGL still has a serious advantage due to ["Learn OpenGL"](https://learnopengl.com/). Generate Vulkan code with ChatGPT?
 
 ## [The Algebra of Tensor Fields](https://aabbtree77.github.io/tensors/)
 
 Vilnius, 2015 - 2024.
 
-Verified tensor algebras of Donn G. Shankland (1970). Spinors, gauge invariance, and [supersymmetry](https://arxiv.org/abs/1212.5605) are left as an exercise for a reader ;).
+Verified tensor algebras of Donn G. Shankland (1970). Spinors and gauge invariance are left as an exercise for a reader ;).
 
 ["Après la montagne, il y a la montagne..." &#8722; Desireless, Hari om Ramakrishna (1989)](https://www.youtube.com/watch?v=18rZv8qWZqA)
 
@@ -87,14 +87,16 @@ Confirmed that Jonas Matuzas' CNN model is one of the most convincing results in
 
 Prior to that, I had also built my own kriging and Adam Coates et al. features-based "AutoML" image recognition system. It relied on the block-Choleski inverse of a large covariance matrix which did not have to fit into, say, 64GB RAM. "AutoML" was achieved by estimating the variance parameter in the Gaussian kernel crudely from the input data instead of running the whole gradient ascent on the maximum likelihood. The noise variance was set to zero. The system reached outstanding error rates, but they were inferior to those of the CNNs: 85% CIFAR-10 accuracy vs the CNN record over 99%.
 
-It is such a tragicomedy to observe how GPUs have removed so many concepts, models, beliefs. The importance of linearity, continuity, precise inverses? Float64, FFT, HMM, Leo Breiman, Vladimir Vapnik, Variational Bayes, PAC Learning? Instead, the GPU bottleneck analysis, Torch expression compiling, large GPU platforms, long-running experiment planning. Big systems: Lc0, AlphaFold, Stable Diffusion, ChatGPT... Big data. [Big meaning?](https://youtu.be/gTAghAJcO1o?t=167)
+It is such a tragicomedy to observe how GPUs have removed so much theory. The importance of linearity, continuity, precise inverses? Float64, FFT, HMM, Leo Breiman's trees, Vladimir Vapnik and kernel methods, Variational Bayes, PAC Learning? Instead, the GPU bottleneck analysis, Torch expression compiling, large GPU platforms, long-running experiment planning. 
+
+Still far from [big meaning](https://youtu.be/gTAghAJcO1o?t=167), but we have a few promising directions: Lc0, AlphaFold, Stable Diffusion, ChatGPT.
 
 ## [3D Shape Normalization (Matlab)](https://diglib.eg.org/handle/10.2312/3dor.20141044.009-015)
 
 PostDoc Chronicles 3: Lugano, 2013-2014. My second encounter with quadratically-constrained quadratic cost optimization, where I have mapped the "Swiss Roll" problem to the fast multipole method-based electrostatics with an approximate distance
 constraint handling (simple projections ala Karmarkar and Cimmino in linear algebra). Davide Boscaini implemented the constraint gradient exactly and pushed the error rates.
 
-The lab was a mildly useful encounter with the "Einsteinian motif" to consider equations on a surface or a graph. Randolf Schärfig showed us some Blender in action well before it went viral with v2.8. He was developing his C++ 3D engine in the same hall of cubicles. All of this was so liberating considering omnipresent Matlab.
+The lab was a mild encounter with the "Einsteinian motif" to consider equations on a surface or a graph. Randolf Schärfig showed us some Blender in action well before it went viral with v2.8. He was developing his C++ 3D engine in the same hall of cubicles. All of this was so liberating considering omnipresent Matlab.
 
 I wasted a lot of time trying to apply the MDS-like algorithms on the [Protein Data Bank](https://www.rcsb.org/), coding things in C, thinking of the data set myopically as some low-level filtering problem which supposedly needed scaling. Little I knew that at the same time AlphaFold was already being developed... 
 
