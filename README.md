@@ -25,13 +25,17 @@ A multilingual website for a lawyer who speaks nine languages. Static HTML, Tail
 
 This project was an eye opener about what the SEO and fair search mean in practice:
 
-- [http://www.lawlt.eu/](http://www.lawlt.eu/) - Built around 2012, the HTTP, data inside the PHP CMS called "CMS Made Simple". Google was paid to advertise it on search from time to time.
+- [http://www.lawlt.eu/](http://www.lawlt.eu/) - Built around 2012, the HTTP, data inside the PHP CMS called "CMS Made Simple". Google was paid to advertise it on search.
 
 - [https://lawtrust.eu/](https://lawtrust.eu/) - Built in 2024, the HTTPS, data directly inside the HTML hosted on github.com. Github is owned by Microsoft. Google was never paid to advertise it.
 
-Google search for "lawyer vilnius": lawlt.eu - Page 3, lawtrust.eu - no results!
+The search for "lawyer vilnius" (January 13th, 2025):
 
-Bing's identical search: lawlt.eu  - Page 11, lawtrust.eu - Page 1!
+- Google: lawlt.eu - Page 3, lawtrust.eu - Page 13.
+
+- Bing: lawlt.eu  - no results in the first 20 pages, lawtrust.eu - Page 1!
+
+- DuckDuckGo: lawlt.eu  - no results in the first 20 pages, lawtrust.eu - Page 1!
 
 ## [Web-Log](https://github.com/aabbtree77/miniguestlog)
 
