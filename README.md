@@ -9,7 +9,7 @@ Ramunas Girdziusas, aabbtree77 at gmail.com
 
 I studied electrical engineering in Lithuania from 1994 to 1999, researched machine learning in Finland from 2000 to 2008, completed three postdoc projects, and returned in 2014 with the goal to become a [software engineer](https://1x.engineer/).
 
-Take a look at some of my work in [embedded software](https://github.com/aabbtree77/adast), [IoT](https://github.com/aabbtree77/esp32-vpn), [3D](https://github.com/aabbtree77/twinpeekz2), and [webdev](https://github.com/aabbtree77/law2).
+Take a look at some of my work in [embedded software](https://github.com/aabbtree77/adast), [IoT](https://github.com/aabbtree77/esp32-vpn), [3D](https://github.com/aabbtree77/twinpeekz2).
 
 ## Work in Progress
 
@@ -43,7 +43,7 @@ Vilnius, 2023-2024.
 
 A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of aabbtree77.github.io. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind.
 
-It took me about a week or two to cobble up everything and get a fully working web app with the help of ChatGPT, no React. 
+It took me about a week or two to cobble up everything and get a fully working web app with the help of ChatGPT. 
 
 Then I started looking for "the right way" since MERN is supposedly obsolete. A year has passed, and now I am only lost more than ever.
 
@@ -61,7 +61,7 @@ Vilnius, 2021 - 2022.
 
 A joint work with Saulius Rakauskas (Infovega): A remote plant watering system with ESP32, MicroPython, Mosquitto MQTT, Ubuntu and [awl](https://github.com/anywherelan/awl) with golibp2p. Numerous tests of [hole punching](<https://en.wikipedia.org/wiki/Hole_punching_(networking)>) through layers of routers with the use of the P2P network other than torrents, to control an ESP32 device globally, without obscure 3rd party services.
 
-I would remove the ESP32 and focus more on the embedded Linux boards. A recent Indian Morse code broadcasting ring deserves to be mentioned in the Appendix section on applications of low RAM devices.
+I would remove the ESP32 and focus more on the embedded Linux boards now (2025).
 
 ## [Volumetrically-Lit Sponza (Go, Nim)](https://github.com/aabbtree77/twinpeekz2)
 
@@ -71,17 +71,15 @@ Volumetric lighting in [Go](https://github.com/aabbtree77/twinpeekz) and [Nim](h
 
 The code is a complete rendering pipeline which may save time for someone who wants to start building a 3D engine while being lost at downscaling any existing ones. The code includes neither ECS, nor physics, which could be a pro. One of my goals was also to test the impact of Go's garbage collector in real time rendering. 
 
-[OpenGL, Vulkan, or WebGPU?](https://www.youtube.com/watch?v=MYi-wpcy0h0&ab_channel=JonathanBlowClips) Gave up on this, but note that they all spread the state, and the languages we use are not designed for these backends at all. RenderDoc is essential. Reddit votings indicate that Vulkan is still less used than OpenGL, but it already helps to run [d3d9-d3d11 on Linux](https://github.com/doitsujin/dxvk/issues/3789). OpenGL still has a serious advantage due to ["Learn OpenGL"](https://learnopengl.com/). Generate Vulkan code with ChatGPT?
+[OpenGL, Vulkan, or WebGPU?](https://www.youtube.com/watch?v=MYi-wpcy0h0&ab_channel=JonathanBlowClips) Gave up on this, but note that they all spread the state, and the languages we use are not designed for these backends at all. RenderDoc is essential. Reddit votings indicate that Vulkan is still less used than OpenGL, but it already helps to run [d3d9-d3d11 on Linux](https://github.com/doitsujin/dxvk/issues/3789). OpenGL still has a serious advantage due to ["Learn OpenGL"](https://learnopengl.com/).
 
 ## [The Algebra of Tensor Fields](https://aabbtree77.github.io/tensors/)
 
 Vilnius, 2015 - 2024.
 
-Verified tensor algebras of Donn G. Shankland (1970). Spinors and gauge invariance are left as an exercise for a reader ;).
+Verified tensor algebras of Donn G. Shankland (1970) and abandoned theoretical physics. Theory is no longer compressing anything. It is healthier to trace significant experiments as they appear historically. This could be the only way out of this arXiv madness.
 
 ["Après la montagne, il y a la montagne..." &#8722; Desireless, Hari om Ramakrishna (1989)](https://www.youtube.com/watch?v=18rZv8qWZqA)
-
-Theory is no longer compressing anything. It is healthier to trace significant experiments as they appear historically. This could be the only way out of this arXiv madness.
 
 ## [MNIST-0.17 (Python)](https://github.com/aabbtree77/MNIST-0.17)
 
@@ -89,18 +87,14 @@ Vilnius, 2014 - 2015.
 
 Confirmed that Jonas Matuzas' CNN model is one of the most convincing results in the MNIST digit recognition. 
 
-Prior to that, I had also built my own kriging and Adam Coates et al. features-based "AutoML" image recognition system. It relied on the block-Choleski inverse of a large covariance matrix which did not have to fit into, say, 64GB RAM. "AutoML" was achieved by estimating the variance parameter in the Gaussian kernel crudely from the input data instead of running the whole gradient ascent on the maximum likelihood. The noise variance was set to zero. The system reached outstanding error rates, but they were inferior to those of the CNNs: 85% CIFAR-10 accuracy vs the CNN record over 99%.
+It is such a tragicomedy to observe how GPUs have removed so much theory. The importance of linearity, continuity, precise inverses? The whole classical statistics. Float64, FFT, HMMs, Leo Breiman's trees, Vladimir Vapnik and kernel methods, Variational Bayes, PAC learning, second order/entropy/curvature methods, convergence analysis, numerical/stability analysis, Kolmogorov - Kůrková theorems, cellular neural networks, RNNs, PCA/ICA-based recommendation systems? The whole "auto tune" direction based on hyperparameter optimization also not that useful. 
 
-It is such a tragicomedy to observe how GPUs have removed so much theory. The importance of linearity, continuity, precise inverses? Float64, FFT, HMM, Leo Breiman's trees, Vladimir Vapnik and kernel methods, Variational Bayes, PAC Learning? Instead, the GPU bottleneck analysis, Torch expression compiling, large GPU platforms, long-running experiment planning. 
-
-Still far from [big meaning](https://youtu.be/gTAghAJcO1o?t=167), but we have a few promising directions: Lc0, AlphaFold, Stable Diffusion, ChatGPT.
+Instead, the GPU bottleneck analysis, Torch expression compiling, large GPU platforms, experiment planning. Still far from [big meaning](https://youtu.be/gTAghAJcO1o?t=167), horrible at math, physics, 3D backends, web APIs, but we have a few promising directions: Lc0, AlphaFold, Stable Diffusion, ChatGPT/DeepSeek/Grok...
 
 ## [3D Shape Normalization (Matlab)](https://diglib.eg.org/handle/10.2312/3dor.20141044.009-015)
 
 PostDoc Chronicles 3: Lugano, 2013-2014. My second encounter with quadratically-constrained quadratic cost optimization, where I have mapped the "Swiss Roll" problem to the fast multipole method-based electrostatics with an approximate distance
 constraint handling (simple projections ala Karmarkar and Cimmino in linear algebra). Davide Boscaini implemented the constraint gradient exactly and pushed the error rates.
-
-The lab was a mild encounter with the "Einsteinian motif" to consider equations on a surface or a graph. Randolf Schärfig showed us some Blender in action well before it went viral with v2.8. He was developing his C++ 3D engine in the same hall of cubicles. All of this was so liberating considering omnipresent Matlab.
 
 I wasted a lot of time trying to apply the MDS-like algorithms on the [Protein Data Bank](https://www.rcsb.org/), coding things in C, thinking of the data set myopically as some low-level filtering problem which supposedly needed scaling. Little I knew that at the same time AlphaFold was already being developed... 
 
