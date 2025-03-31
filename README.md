@@ -15,39 +15,19 @@ Take a look at some of my work in [embedded software](https://github.com/aabbtre
 
 Vilnius, Now.
 
-This interim release includes [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. It uses TypeScript for the both, and includes a small memo how to set up browser cookies locally and with the HTTPS.
+This interim release includes [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. It includes a memo how to set up browser cookies locally and with the HTTPS.
 
 ## [lawtrust.eu](https://lawtrust.eu/): [lawlt.eu](http://www.lawlt.eu/) [Improved](https://github.com/aabbtree77/law2)
 
 Vilnius, February 2024.
 
-A multilingual website for a lawyer who speaks nine languages. Static HTML, Tailwind CSS, [gomarkdown](https://github.com/gomarkdown/markdown), porkbun.com, and github pages.
+A multilingual website for a lawyer who speaks nine languages. Tailwind CSS, [gomarkdown](https://github.com/gomarkdown/markdown), porkbun.com, and github pages. This project was an eye opener about the SEO and online visibility.
 
-This project was an eye opener about what the SEO and fair search mean in practice:
-
-- [http://www.lawlt.eu/](http://www.lawlt.eu/) - Built around 2012, the HTTP, data inside the PHP CMS called "CMS Made Simple". Google was paid to advertise it on search.
-
-- [https://lawtrust.eu/](https://lawtrust.eu/) - Built in 2024, the HTTPS, data directly inside the HTML hosted on github.com. Github is owned by Microsoft. Google was never paid to advertise it.
-
-The search for "lawyer vilnius" (January 13th, 2025):
-
-- Google: lawlt.eu - Page 3, lawtrust.eu - Page 13.
-
-- Bing: lawlt.eu  - no results in the first 20 pages, lawtrust.eu - Page 1!
-
-- DuckDuckGo: lawlt.eu  - no results in the first 20 pages, lawtrust.eu - Page 1!
-
-## [Web-Log](https://github.com/aabbtree77/miniguestlog)
+## [Web Log](https://github.com/aabbtree77/miniguestlog)
 
 Vilnius, 2023-2024.
 
-A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of aabbtree77.github.io. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind.
-
-It took me about a week or two to cobble up everything and get a fully working web app with the help of ChatGPT. 
-
-Then I started looking for "the right way" since MERN is supposedly obsolete. A year has passed, and now I am only lost more than ever.
-
-When someone tells you "we got it right this time"... remember the protagonist's face in the hammer scene from Oldboy (2003), when the elevator door opens.
+A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of aabbtree77.github.io. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind. It took me about a week or two to cobble up everything with ChatGPT. Then I started looking for "the right way"...
 
 ## [Paper Guillotine](https://github.com/aabbtree77/adast)
 
@@ -59,25 +39,19 @@ A joint work with Saulius Rakauskas (Infovega). We have been maintaining a *real
 
 Vilnius, 2021 - 2022.
 
-A joint work with Saulius Rakauskas (Infovega): A remote plant watering system with ESP32, MicroPython, Mosquitto MQTT, Ubuntu and [awl](https://github.com/anywherelan/awl) with golibp2p. Numerous tests of [hole punching](<https://en.wikipedia.org/wiki/Hole_punching_(networking)>) through layers of routers with the use of the P2P network other than torrents, to control an ESP32 device globally, without obscure 3rd party services.
-
-I would remove the ESP32 and focus more on the embedded Linux boards now (2025).
+A joint work with Saulius Rakauskas (Infovega): A remote plant watering system with ESP32, MicroPython, Mosquitto MQTT, Ubuntu and [awl](https://github.com/anywherelan/awl) with golibp2p. Numerous tests of [hole punching](<https://en.wikipedia.org/wiki/Hole_punching_(networking)>) through layers of routers with the use of the P2P network other than torrents, to control an ESP32 device globally, without obscure 3rd party services. I would replace the ESP32 with Raspberry Pi Zero W now (2025).
 
 ## [Volumetrically-Lit Sponza (Go, Nim)](https://github.com/aabbtree77/twinpeekz2)
 
 Vilnius, 2020 - 2022.
 
-Volumetric lighting in [Go](https://github.com/aabbtree77/twinpeekz) and [Nim](https://github.com/aabbtree77/twinpeekz2) (forward rendering, shadow mapping, PBR, 3D ray marching, OpenGL) following [Balázs Tóth, Tamás Umenhoffer (2009)](https://diglib.eg.org/handle/10.2312/egs.20091048.057-060), and [Tomas Öhberg (2017)](https://gitlab.com/tomasoh/100_procent_more_volume).
-
-The code is a complete rendering pipeline which may save time for someone who wants to start building a 3D engine while being lost at downscaling any existing ones. The code includes neither ECS, nor physics, which could be a pro. One of my goals was also to test the impact of Go's garbage collector in real time rendering. 
-
-[OpenGL, Vulkan, or WebGPU?](https://www.youtube.com/watch?v=MYi-wpcy0h0&ab_channel=JonathanBlowClips) Gave up on this, but note that they all spread the state, and the languages we use are not designed for these backends at all. RenderDoc is essential. Reddit votings indicate that Vulkan is still less used than OpenGL, but it already helps to run [d3d9-d3d11 on Linux](https://github.com/doitsujin/dxvk/issues/3789). OpenGL still has a serious advantage due to ["Learn OpenGL"](https://learnopengl.com/).
+Volumetric lighting in [Go](https://github.com/aabbtree77/twinpeekz) and [Nim](https://github.com/aabbtree77/twinpeekz2) (forward rendering, shadow mapping, PBR, 3D ray marching, OpenGL) following [Balázs Tóth, Tamás Umenhoffer (2009)](https://diglib.eg.org/handle/10.2312/egs.20091048.057-060), and [Tomas Öhberg (2017)](https://gitlab.com/tomasoh/100_procent_more_volume). The code is a complete rendering pipeline which may serve someone who wants to start building a 3D project while being lost at downscaling any existing ones.
 
 ## [The Algebra of Tensor Fields](https://aabbtree77.github.io/tensors/)
 
 Vilnius, 2015 - 2024.
 
-Verified tensor algebras of Donn G. Shankland (1970) and abandoned theoretical physics. Theory is no longer compressing anything. It is healthier to trace significant experiments as they appear historically. This could be the only way out of this arXiv madness.
+Verified tensor algebras of Donn G. Shankland (1970) and abandoned theoretical physics. Theory is no longer compressing anything. It is healthier to trace significant experiments as they appear historically. This could be the only way out of the arXiv madness.
 
 ["Après la montagne, il y a la montagne..." &#8722; Desireless, Hari om Ramakrishna (1989)](https://www.youtube.com/watch?v=18rZv8qWZqA)
 
@@ -85,18 +59,16 @@ Verified tensor algebras of Donn G. Shankland (1970) and abandoned theoretical p
 
 Vilnius, 2014 - 2015.
 
-Confirmed that Jonas Matuzas' CNN model is one of the most convincing results in the MNIST digit recognition. 
+Confirmed that Jonas Matuzas' CNN model closes the MNIST digit recognition saga. 
 
-It is such a tragicomedy to observe how GPUs have removed so much theory. The importance of linearity, continuity, precise inverses? The whole classical statistics. Float64, FFT, HMMs, Leo Breiman's trees, Vladimir Vapnik and kernel methods, Variational Bayes, PAC learning, second order/entropy/curvature methods, convergence analysis, numerical/stability analysis, Kolmogorov - Kůrková theorems, cellular neural networks, RNNs, PCA/ICA-based recommendation systems? The whole "auto tune" direction based on hyperparameter optimization also not that useful. 
-
-Instead, the GPU bottleneck analysis, Torch expression compiling, large GPU platforms, experiment planning. Still far from [big meaning](https://youtu.be/gTAghAJcO1o?t=167), horrible at math, physics, 3D backends, web APIs, but we have a few promising directions: Lc0, AlphaFold, Stable Diffusion, ChatGPT/DeepSeek/Grok...
+GPUs have removed so much theory. The importance of linearity, continuity, Float64, FFT, probabilities, trees, kernel methods, Bayes, convergence, stability, recursion, hyperparameter optimization... Still ages from [big meaning](https://youtu.be/gTAghAJcO1o?t=167), still horrible at math, physics, 3D backends, APIs (2025).
 
 ## [3D Shape Normalization (Matlab)](https://diglib.eg.org/handle/10.2312/3dor.20141044.009-015)
 
 PostDoc Chronicles 3: Lugano, 2013-2014. My second encounter with quadratically-constrained quadratic cost optimization, where I have mapped the "Swiss Roll" problem to the fast multipole method-based electrostatics with an approximate distance
 constraint handling (simple projections ala Karmarkar and Cimmino in linear algebra). Davide Boscaini implemented the constraint gradient exactly and pushed the error rates.
 
-I wasted a lot of time trying to apply the MDS-like algorithms on the [Protein Data Bank](https://www.rcsb.org/), coding things in C, thinking of the data set myopically as some low-level filtering problem which supposedly needed scaling. Little I knew that at the same time AlphaFold was already being developed... 
+I wasted a lot of time trying to apply the MDS-like algorithms on the [Protein Data Bank](https://www.rcsb.org/), coding things in C, thinking of the data set myopically as some low-level filtering problem which supposedly needed scaling. Little I knew that at the same time AlphaFold was already being developed. 
 
 ## [Cloud Computing (Scilab)](https://hal.archives-ouvertes.fr/hal-00723427)
 
