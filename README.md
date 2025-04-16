@@ -11,11 +11,17 @@ I studied electrical engineering in Lithuania from 1994 to 1999, researched mach
 
 Take a look at some of my work in [embedded software](https://github.com/aabbtree77/adast), [IoT](https://github.com/aabbtree77/esp32-vpn), [3D](https://github.com/aabbtree77/twinpeekz2).
 
-## Work in Progress
+## [surveillance](https://github.com/aabbtree77/surveillance)
 
-Vilnius, Now.
+Vilnius, April 2025.
 
-This interim release includes [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. It includes a memo how to set up browser cookies locally and with the HTTPS.
+Set up an IP camera with Motion to store videos on Ubuntu 22.04 with motion detected in them. LAN-based tests, would need AnyDesk, RustDesk, or, better, [anywherelan/awl](https://github.com/anywherelan/awl) (P2P) to have a fully remote surveillance system.
+
+## auth-starter-backend + frontend
+
+Vilnius, June 2024.
+
+A tiny demo [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. It includes a memo how to set up browser cookies locally and with the HTTPS.
 
 ## [lawtrust.eu](https://lawtrust.eu/): [lawlt.eu](http://www.lawlt.eu/) [Improved](https://github.com/aabbtree77/law2)
 
@@ -23,45 +29,45 @@ Vilnius, February 2024.
 
 A multilingual website for a lawyer who speaks nine languages. Tailwind CSS, [gomarkdown](https://github.com/gomarkdown/markdown), porkbun.com, and github pages. This project was an eye opener about the SEO and online visibility.
 
-## [Web Log](https://github.com/aabbtree77/miniguestlog)
+## [miniguestlog](https://github.com/aabbtree77/miniguestlog)
 
 Vilnius, 2023-2024.
 
 A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of aabbtree77.github.io. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind. It took me about a week or two to cobble up everything with ChatGPT. Then I started looking for "the right way"...
 
-## [Paper Guillotine](https://github.com/aabbtree77/adast)
+## [adast](https://github.com/aabbtree77/adast)
 
 Vilnius, 2020 - 2024.
 
 A joint work with Saulius Rakauskas (Infovega). We have been maintaining a *real* factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc).
 
-## [P2P Connectivity](https://github.com/aabbtree77/esp32-vpn)
+## [esp32-vpn](https://github.com/aabbtree77/esp32-vpn)
 
 Vilnius, 2021 - 2022.
 
 A joint work with Saulius Rakauskas (Infovega): A remote plant watering system with ESP32, MicroPython, Mosquitto MQTT, Ubuntu and [awl](https://github.com/anywherelan/awl) with golibp2p. Numerous tests of [hole punching](<https://en.wikipedia.org/wiki/Hole_punching_(networking)>) through layers of routers with the use of the P2P network other than torrents, to control an ESP32 device globally, without obscure 3rd party services. I would replace the ESP32 with Raspberry Pi Zero W now (2025).
 
-## [Volumetrically-Lit Sponza (Go, Nim)](https://github.com/aabbtree77/twinpeekz2)
+## [twinpeekz2](https://github.com/aabbtree77/twinpeekz2)
 
 Vilnius, 2020 - 2022.
 
 Volumetric lighting in [Go](https://github.com/aabbtree77/twinpeekz) and [Nim](https://github.com/aabbtree77/twinpeekz2) (forward rendering, shadow mapping, PBR, 3D ray marching, OpenGL) following [Balázs Tóth, Tamás Umenhoffer (2009)](https://diglib.eg.org/handle/10.2312/egs.20091048.057-060), and [Tomas Öhberg (2017)](https://gitlab.com/tomasoh/100_procent_more_volume). The code is a complete rendering pipeline which may serve someone who wants to start building a 3D project while being lost at downscaling any existing ones.
 
-## [The Algebra of Tensor Fields](https://aabbtree77.github.io/tensors/)
+## [tensors](https://aabbtree77.github.io/tensors/)
 
 Vilnius, 2015 - 2024.
 
-Verified tensor algebras of Donn G. Shankland (1970) and abandoned theoretical physics. Theory is no longer compressing anything. It is healthier to trace significant experiments as they appear historically. This could be the only way out of the arXiv madness.
+Verified tensor algebras of Donn G. Shankland (1970).
 
 ["Après la montagne, il y a la montagne..." &#8722; Desireless, Hari om Ramakrishna (1989)](https://www.youtube.com/watch?v=18rZv8qWZqA)
 
-## [MNIST-0.17 (Python)](https://github.com/aabbtree77/MNIST-0.17)
+## [MNIST-0.17](https://github.com/aabbtree77/MNIST-0.17)
 
 Vilnius, 2014 - 2015.
 
 Confirmed that Jonas Matuzas' CNN model closes the MNIST digit recognition saga. 
 
-GPUs have removed so much theory. The importance of linearity, continuity, Float64, FFT, probabilities, trees, kernel methods, Bayes, convergence, stability, recursion, hyperparameter optimization... Still ages from [big meaning](https://youtu.be/gTAghAJcO1o?t=167), still horrible at math, physics, 3D backends, APIs (2025).
+GPUs have removed so much theory. The importance of linearity, continuity, Float64, FFT, probabilities, trees, kernel methods, Newton, Markov, Bayes, convergence, stability, recursion, logic, hyperparameter optimization, wavelets, boosting, linear and quadratic programming... Still ages from [big meaning](https://youtu.be/gTAghAJcO1o?t=167), still horrible at math, physics, 3D backends, APIs (2025).
 
 ## [3D Shape Normalization (Matlab)](https://diglib.eg.org/handle/10.2312/3dor.20141044.009-015)
 
