@@ -70,7 +70,7 @@ My first job, at the CIS Lab, [Helsinki University of Technology (TKK)](https://
 
 <br>
 
-<table align="center">
+<table align="center" width="100%" style="margin: 0px;">
     <tr>
     <th align="left">Ilya Kabakov. The Man Who Flew into Space from his Apartment, 1988</th>
     </tr>
