@@ -29,15 +29,15 @@ A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinn
 
 A joint work with Saulius Rakauskas (Infovega). We have been maintaining a *real* factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc).
 
-## [esp32-vpn, 2022](https://github.com/aabbtree77/esp32-vpn)
+## [esp32-vpn, 2021 - 2022](https://github.com/aabbtree77/esp32-vpn)
 
 A joint work with Saulius Rakauskas (Infovega): A remote plant watering system with ESP32, MicroPython, Mosquitto MQTT, Ubuntu and [awl](https://github.com/anywherelan/awl) with golibp2p. Numerous tests of [hole punching](<https://en.wikipedia.org/wiki/Hole_punching_(networking)>) through layers of routers with the use of the P2P network other than torrents, to control an ESP32 device globally, without obscure 3rd party services.
 
-## [twinpeekz, 2020](https://github.com/aabbtree77/twinpeekz)
+## [twinpeekz, 2020 - 2022](https://github.com/aabbtree77/twinpeekz)
 
 Volumetric lighting in [Go](https://github.com/aabbtree77/twinpeekz) and [Nim](https://github.com/aabbtree77/twinpeekz2) (forward rendering, shadow mapping, PBR, 3D ray marching, OpenGL) following [Balázs Tóth, Tamás Umenhoffer (2009)](https://diglib.eg.org/handle/10.2312/egs.20091048.057-060), and [Tomas Öhberg (2017)](https://gitlab.com/tomasoh/100_procent_more_volume). The code is a complete rendering pipeline which may serve someone who wants to start building a 3D project while being lost at downscaling any existing ones.
 
-## [tensors, 2015 - 2024](https://aabbtree77.github.io/tensors/)
+## [tensors, 2017 - 2024](https://aabbtree77.github.io/tensors/)
 
 Verified tensor algebras of Donn G. Shankland (1970). [Après la montagne, il y a la montagne...](https://www.youtube.com/watch?v=18rZv8qWZqA)
 
@@ -45,7 +45,7 @@ Verified tensor algebras of Donn G. Shankland (1970). [Après la montagne, il y 
 
 Confirmed that Jonas Matuzas' CNN model closes the MNIST digit recognition saga. 
 
-## [3D Shape Normalization, 2014](https://diglib.eg.org/handle/10.2312/3dor.20141044.009-015)
+## [3D Shape Normalization, 2013 - 2014](https://diglib.eg.org/handle/10.2312/3dor.20141044.009-015)
 
 PostDoc Chronicles 3: Lugano, 2013-2014. The second encounter with quadratically-constrained quadratic cost optimization where I have mapped the "Swiss Roll" problem to the fast multipole method-based electrostatics with an approximate distance
 constraint handling (simple projections ala Karmarkar and Cimmino in linear algebra). Davide Boscaini implemented the constraint gradient exactly and pushed the error rates.
