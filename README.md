@@ -1,6 +1,17 @@
 > "Let it go. We have bigger fights."  
 > \- Reacher (2022)
 
+<table align="center">
+    <tr>
+    <th align="center">Siṃhāsana (सिंहासन) aka the Lion Pose, Hatha Yoga.</th>
+    </tr>
+    <tr>
+    <td>
+    <img src="./imgs/lion-pose-img-3-1-1024x683.jpg"  alt="Siṃhāsana (सिंहासन) aka the Lion Pose, Hatha Yoga." width="100%" >
+    </td>
+    </tr>
+</table>
+
 ## About
 
 Ramunas Girdziusas, aabbtree77 at gmail.com
@@ -13,7 +24,7 @@ I studied electrical engineering in Lithuania from 1994 to 1999, researched mach
 
 ### [surveillance](https://github.com/aabbtree77/surveillance)
 
-Set up an IP camera with Motion to store videos on Ubuntu 22.04 with motion detected in them. LAN-based tests, would need AnyDesk, RustDesk, or [anywherelan/awl](https://github.com/anywherelan/awl) (P2P) for remote surveillance.
+A setup for an IP camera with Motion to store videos on Ubuntu 22.04 with motion detected in them. LAN-based tests, would need AnyDesk, RustDesk, or [anywherelan/awl](https://github.com/anywherelan/awl) (P2P) for remote surveillance.
 
 ### auth-starter-backend + frontend
 
@@ -45,7 +56,7 @@ Verified tensor algebras of Donn G. Shankland (1970). [Après la montagne, il y 
 
 ### [MNIST-0.17](https://github.com/aabbtree77/MNIST-0.17)
 
-Confirmed that Jonas Matuzas' CNN model closes the MNIST digit recognition saga. 
+Confirmed Jonas Matuzas' CNN model. It closes the MNIST digit recognition saga. 
 
 ## PostDoc: 2008 - 2014
 
