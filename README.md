@@ -67,7 +67,7 @@ constraint handling (simple projections ala Karmarkar and Cimmino in linear alge
 
 ### [Cloud Computing](https://hal.archives-ouvertes.fr/hal-00723427)
 
-PostDoc Chronicles 2: Saint-Étienne, 2012-2013. Optimization of the fluid flow which was implemented before me with OpenFOAM, CATIA, STAR CCM+ and ParaView, running on the ProActive PACA Grid cloud (INRIA) via the Scilab-to-Java bridge managed by Fabien Viale. The optimization involved kriging and CMA-ES as the meta-optimizer of the expected multi-point improvement whose MC integration I sped up with a specialized unscented transform. See the [slides](https://github.com/aabbtree77/aabbtree77.github.io/blob/main/pdfs/optimization2012.pdf). David Ginsbourger approached the integral differently, reducing it to Fortran routines which needed to compute multivariate Gaussian quadratures. 
+PostDoc Chronicles 2: Saint-Étienne, 2012-2013. Optimization of the fluid flow which was implemented before me with OpenFOAM, CATIA, STAR CCM+ and ParaView, running on the ProActive PACA Grid cloud (INRIA) via the Scilab-to-Java bridge managed by Fabien Viale. The optimization involved kriging and the CMA-ES as a meta-optimizer of the expected multi-point improvement whose integration I sped up with a specialized unscented transform. See the [slides](https://github.com/aabbtree77/aabbtree77.github.io/blob/main/pdfs/optimization2012.pdf). David Ginsbourger approached the integral differently, reducing it to Fortran routines which needed to compute multivariate Gaussian quadratures. 
 
 ### [Modified Thomson Problem (Unpublished, 2008 - 2009)](https://github.com/aabbtree77/aabbtree77.github.io/blob/main/pdfs/ucla2009.pdf)
 
