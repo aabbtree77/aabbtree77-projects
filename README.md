@@ -1,17 +1,6 @@
 > "Let it go. We have bigger fights."  
 > \- Reacher (2022)
 
-<table align="center">
-    <tr>
-    <th align="center">Siṃhāsana (सिंहासन) aka the Lion Pose, Hatha Yoga.</th>
-    </tr>
-    <tr>
-    <td>
-    <img src="./imgs/lion-pose-img-3-1-1024x683.jpg"  alt="Siṃhāsana (सिंहासन) aka the Lion Pose, Hatha Yoga." width="100%" >
-    </td>
-    </tr>
-</table>
-
 ## About
 
 Ramunas Girdziusas, aabbtree77 at gmail.com
@@ -20,19 +9,31 @@ Ramunas Girdziusas, aabbtree77 at gmail.com
 
 I studied electrical engineering in Lithuania from 1994 to 1999, researched machine learning in Finland from 2000 to 2008, completed three postdoc projects, and returned in 2014. Living off my savings, considering a career in [software engineering](https://1x.engineer/). Take a look at some of my work.
 
-## Self-Funded Mostly: 2014 - 2025
+## Self-Funded: 2014 - 2026
+
+### [opt and initialsdb](https://github.com/aabbtree77/opt)
+
+This a rather simple business-oriented CRUD web app (without U and D), i.e. a message store, running on Hetzner 24/7 at [initials.dev](https://initials.dev/). The repo includes code and infrastructure needed to host it. There are five or six Makefiles, each for a different environment: build, debug, dev, prod, vps, including Dockerfiles, and even docker-compose.yml, but the latter is probably too much and Makefiles would have done it all just fine.
+
+A VPS gives so much more bandwidth (20TB vs 5TB) and control, and it costs about 4x less than those serverless services, not to mention better sleep at night due to possible DDoS bills and cold starts. Go is absolutely better than Node, but React is perpetually a question, and the right way is also extremely verbose.
+
+### [schatzhauser](https://github.com/aabbtree77/schatzhauser)
+
+This a solid Go JSON API backend based on SQLite and sqlc, with session cookies-based user authentication, rate limiters, and user management cli. The idea was to add React later and turn this into a framework/web app, but two problems made it a no go.
+
+SQLite is great, but not really web-ready. Postgres is only slightly more complex to setup, but AI will generate codes just as easily and you get so much there out of the box that SQLite is just history now, for me. Another moment to note is that at some point tests began to take much more code than the actual app, leading to a stalemate. After all, we are building the web, not Ariane rockets, it does not make sense to spend too much time on "generic what ifs" when so many basic features are still missing.
 
 ### [surveillance](https://github.com/aabbtree77/surveillance)
 
-A setup for an IP camera with Motion to store videos on Ubuntu 22.04 with motion detected in them. LAN-based tests, would need AnyDesk, RustDesk, or [anywherelan/awl](https://github.com/anywherelan/awl) (P2P) for remote surveillance.
+A setup to test an IP camera with Motion to store videos on Ubuntu 22.04 with motion detected in them. LAN-based tests, would need AnyDesk, RustDesk, or [anywherelan/awl](https://github.com/anywherelan/awl) (P2P) for remote surveillance.
 
 ### auth-starter-backend + frontend
 
-A tiny demo [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. It includes a memo how to set up browser cookies locally and with the HTTPS.
+A tiny demo [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. It includes a memo how to set up browser cookies locally and with the HTTPS. Before, I have tried [Astro + Lucia](https://github.com/aabbtree77/session-auth-starter). The problem is still there as most of the Js/Ts metaframeworks do not provide authentication out of the box, and everybody does it differently. Eventually, I have dropped Node in favour of Go + React.
 
-### [lawtrust.eu](https://lawtrust.eu/)
+### [site-redesign-demo](https://github.com/aabbtree77/site-redesign-demo)
 
-A multilingual website for a lawyer who speaks nine languages. Tailwind CSS, [gomarkdown](https://github.com/gomarkdown/markdown), porkbun.com, and github pages. This project was an eye opener about the SEO and online visibility.
+This was a multilingual website which I built for a lawyer who spoke nine languages: lawtrust.eu which was itself a rewrite of www.lawlt.eu. Tailwind CSS, [gomarkdown](https://github.com/gomarkdown/markdown), porkbun.com, and github pages, and a lot of tedious translation work with DeepL. This project was an eye opener about the SEO and online visibility. After about a year I have been contacted by one London law firm to put it down as apparently the name "lawtrust" has been trademarked. The lawyer moved to a minimal generic template website which, however, connected him to his Facebook Messenger.
 
 ### [miniguestlog](https://github.com/aabbtree77/miniguestlog)
 
@@ -40,15 +41,21 @@ A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinn
 
 ### [adast](https://github.com/aabbtree77/adast)
 
-A joint work with Saulius Rakauskas (Infovega). We have been maintaining a *real* factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc).
+A joint work with Saulius Rakauskas (Infovega). We have been maintaining a _real_ factory machine since February 2020 (last update: February 2024). I wrote microcontroller code in C (avr-gcc).
 
 ### [esp32-vpn](https://github.com/aabbtree77/esp32-vpn)
 
 A joint work with Saulius Rakauskas (Infovega): A remote plant watering system with ESP32, MicroPython, Mosquitto MQTT, Ubuntu and [awl](https://github.com/anywherelan/awl) with golibp2p. Numerous tests of [hole punching](<https://en.wikipedia.org/wiki/Hole_punching_(networking)>) through layers of routers with the use of the P2P network other than torrents, to control an ESP32 device globally, without obscure 3rd party services.
 
+### [twinpeekz2](https://github.com/aabbtree77/twinpeekz2)
+
+A rewrite of [twinpeekz](https://github.com/aabbtree77/twinpeekz) in Nim. Nim is a beautiful low level language, among very few (along with D?) which are actually succinct. It is too big to be good, but one can always grab a decent subset and it will come up as a much better Go/Rust. The problem is, Nim only works as a personal marvelous constructor. The libs are nonexisting or are very hard to decipher due to macros. Horrible debugging experience in VS Code, though one should probably drop the debugger as some inessential luxury, esp. when it comes to the newer languages.
+
+The problem of "better C" is hopeless. We do get Ada, Rust, Zig, Odin... Jai at some point, but they all lack a punch and fracture the domain. What we need is what Ts did to Js: embrace and extinguish. That means building a superset of C with all the UB of C, which nobody wants in a new language.
+
 ### [twinpeekz](https://github.com/aabbtree77/twinpeekz)
 
-Volumetric lighting in [Go](https://github.com/aabbtree77/twinpeekz) and [Nim](https://github.com/aabbtree77/twinpeekz2) (forward rendering, shadow mapping, PBR, 3D ray marching, OpenGL) following [Balázs Tóth, Tamás Umenhoffer (2009)](https://diglib.eg.org/handle/10.2312/egs.20091048.057-060), and [Tomas Öhberg (2017)](https://gitlab.com/tomasoh/100_procent_more_volume). The code is a complete rendering pipeline which may serve someone who wants to start building a 3D project while being lost at downscaling any existing ones.
+Volumetric lighting in [Go](https://github.com/aabbtree77/twinpeekz) (forward rendering, shadow mapping, PBR, 3D ray marching, OpenGL) following [Balázs Tóth, Tamás Umenhoffer (2009)](https://diglib.eg.org/handle/10.2312/egs.20091048.057-060), and [Tomas Öhberg (2017)](https://gitlab.com/tomasoh/100_procent_more_volume). The code is a complete rendering pipeline which may serve someone who wants to start building a 3D project while being lost at downscaling any existing ones.
 
 ### [tensors](https://aabbtree77.github.io/tensors/)
 
@@ -56,7 +63,7 @@ Verified tensor algebras of Donn G. Shankland (1970). [Après la montagne, il y 
 
 ### [MNIST-0.17](https://github.com/aabbtree77/MNIST-0.17)
 
-Confirmed Jonas Matuzas' CNN model. It closes the MNIST digit recognition saga. 
+Confirmed Jonas Matuzas' CNN model. It closes the MNIST digit recognition saga.
 
 ## PostDoc: 2008 - 2014
 
@@ -67,7 +74,7 @@ constraint handling (simple projections ala Karmarkar and Cimmino in linear alge
 
 ### [Cloud Computing](https://hal.archives-ouvertes.fr/hal-00723427)
 
-PostDoc Chronicles 2: Saint-Étienne, 2012-2013. Optimization of the fluid flow which was implemented before me with OpenFOAM, CATIA, STAR CCM+ and ParaView, running on the ProActive PACA Grid cloud (INRIA) via the Scilab-to-Java bridge managed by Fabien Viale. The optimization involved kriging and the CMA-ES as a meta-optimizer of the expected multi-point improvement whose integration I sped up with a specialized unscented transform. See the [slides](https://github.com/aabbtree77/aabbtree77.github.io/blob/main/pdfs/optimization2012.pdf). David Ginsbourger approached the integral differently, reducing it to Fortran routines which needed to compute multivariate Gaussian quadratures. 
+PostDoc Chronicles 2: Saint-Étienne, 2012-2013. Optimization of the fluid flow which was implemented before me with OpenFOAM, CATIA, STAR CCM+ and ParaView, running on the ProActive PACA Grid cloud (INRIA) via the Scilab-to-Java bridge managed by Fabien Viale. The optimization involved kriging and the CMA-ES as a meta-optimizer of the expected multi-point improvement whose integration I sped up with a specialized unscented transform. See the [slides](https://github.com/aabbtree77/aabbtree77.github.io/blob/main/pdfs/optimization2012.pdf). David Ginsbourger approached the integral differently, reducing it to Fortran routines which needed to compute multivariate Gaussian quadratures.
 
 ### [Modified Thomson Problem (Unpublished, 2008 - 2009)](https://github.com/aabbtree77/aabbtree77.github.io/blob/main/pdfs/ucla2009.pdf)
 
@@ -84,18 +91,3 @@ Daffertshofer-Haken-1994 as a strategically wrong, but inspiring paper, E.T. Jay
 ### UNIPEN Parser, 2000
 
 My first job, at the CIS Lab, [Helsinki University of Technology (TKK)](https://en.wikipedia.org/wiki/Helsinki_University_of_Technology), guided by Dr. Jorma Laaksonen. During the first two weeks I wrote a parser which loaded UNIPEN to Matlab.
-
-<br>
-
-<table align="center" width="100%" style="margin: 0px;">
-    <tr>
-    <th align="left">Ilya Kabakov. The Man Who Flew into Space from his Apartment, 1988</th>
-    </tr>
-    <tr>
-    <td>
-    <img src="imgs/IljaKabakov1986.jpg"  alt="Modern art, USSR" width="100%" >
-    </td>
-    </tr>
-</table>
-
-<br>
