@@ -15,7 +15,7 @@ I studied electrical engineering in Lithuania from 1994 to 1999, researched mach
 
 This a rather simple business-oriented CRUD web app (without U and D), i.e. a message store, running on Hetzner 24/7 at [initials.dev](https://initials.dev/). The repo includes code and infrastructure needed to host it. There are five or six Makefiles, each for a different environment: build, debug, dev, prod, vps, including Dockerfiles, and even docker-compose.yml, but the latter is probably too much and Makefiles would have done it all just fine.
 
-A VPS gives so much more bandwidth (20TB vs 5TB) and control, and it costs about 4x less than those serverless services, not to mention better sleep at night due to possible DDoS bills and cold starts. Go is absolutely better than Node, but React is perpetually a question, and the right way is also extremely verbose.
+A VPS gives 20x more bandwidth while costing 4x less than serverless, not to mention better sleep at night due to DDoS and cold starts. Go is absolutely better than Node, but React is perpetually a question, and the right way is also verbose.
 
 ### [schatzhauser](https://github.com/aabbtree77/schatzhauser)
 
