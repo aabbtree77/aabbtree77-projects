@@ -11,11 +11,21 @@ I studied electrical engineering in Lithuania from 1994 to 1999, researched mach
 
 ## Self-Funded: 2014 - 2026
 
+### [cryptobot](https://github.com/aabbtree77/cryptobot)
+
+I got mildly inspired by Nikhil Barthwal's talk "Building Your Own Trading Bot in F#" and fancied the idea of building my own bot in Go. One can find spec.md (README.md) which is a result of a long discussion with ChatGPT5, emphasizing correct trading data-action resyncing rather than dogfight with latencies. I am not much of a trader, so I am leaving this as it is, but this could be a fascinating theme for a PhD thesis or just building a real-time distributed system.
+
+The toughest thing is async/parallelism, and in this regard a worthy reading is
+
+"Go vs Rust in 2026: I Built the Same High-Traffic Service in Both — One Made Me Sleep Better" by Yusuf Seyitoğlu.
+
 ### [opt and initialsdb](https://github.com/aabbtree77/opt)
 
-This a rather simple business-oriented CRUD web app (without U and D), i.e. a message store, running on Hetzner 24/7 at [initials.dev](https://initials.dev/). The repo includes code and infrastructure needed to host it. There are five or six Makefiles, each for a different environment: build, debug, dev, prod, vps, including Dockerfiles, and even docker-compose.yml, but the latter is probably too much and Makefiles would have done it all just fine.
+This is a message store (CRUD without UD), which ran on Hetzner 24/7 as _initials.dev_ for three months to test the technology stack. The repo includes code and infrastructure needed to host it. There are five or six Makefiles, each for a different environment: build, debug, dev, prod, copying stuff to vps. I have also applied Docker Compose, but plain minimal use of Docker with Makefiles would have been fine too (to avoid debugging YAML...).
 
-A VPS gives 20x more bandwidth while costing 4x less than serverless, not to mention better sleep at night due to DDoS and cold starts. Go is absolutely better than Node, but React is perpetually a question, and the right way is also verbose.
+A VPS gives 20x more bandwidth while costing 4x less than serverless, not to mention better sleep at night due to DDoS and cold starts, but all this comes at the price of designing everything from scratch (decisions whether Postgres runs per app or whole VPS, ssh and folder layouts, secret management etc. and etc.). So no miracles here, only tradeoffs. 
+
+Go is absolutely better than Node. I feel desire to drop React, but how to guarantee accessibility without it?
 
 ### [schatzhauser](https://github.com/aabbtree77/schatzhauser)
 
@@ -49,9 +59,7 @@ A joint work with Saulius Rakauskas (Infovega): A remote plant watering system w
 
 ### [twinpeekz2](https://github.com/aabbtree77/twinpeekz2)
 
-A rewrite of [twinpeekz](https://github.com/aabbtree77/twinpeekz) in Nim. Nim is a beautiful low level language, among very few (along with D?) which are actually succinct. It is too big to be good, but one can always grab a decent subset and it will come up as a much better Go/Rust. The problem is, Nim only works as a personal marvelous constructor. The libs are nonexisting or are very hard to decipher due to macros. Horrible debugging experience in VS Code, though one should probably drop the debugger as some inessential luxury, esp. when it comes to the newer languages.
-
-The problem of "better C" is hopeless. We do get Ada, Rust, Zig, Odin... Jai at some point, but they all lack a punch and fracture the domain. What we need is what Ts did to Js: embrace and extinguish. That means building a superset of C with all the UB of C, which nobody wants in a new language.
+A rewrite of [twinpeekz](https://github.com/aabbtree77/twinpeekz) in Nim. Nim is a beautiful low level language, among very few (along with D?) which are also succinct. The libs are scarce and often hard to decipher though.
 
 ### [twinpeekz](https://github.com/aabbtree77/twinpeekz)
 
