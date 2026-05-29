@@ -35,9 +35,7 @@ Go is absolutely better than Node. I feel desire to drop React, but how to guara
 
 ### [schatzhauser](https://github.com/aabbtree77/schatzhauser)
 
-This a solid Go JSON API backend based on SQLite and sqlc, with session cookies-based user authentication, rate limiters, and user management cli. The idea was to add React later and turn this into a framework/web app, but two problems made it a no go.
-
-SQLite is great, but not really web-ready. Postgres is only slightly more complex to setup, but AI will generate codes just as easily and you get so much there out of the box that SQLite is just history now, for me. Another moment to note is that at some point tests began to take much more code than the actual app, leading to a stalemate. After all, we are building the web, not Ariane rockets, it does not make sense to spend too much time on "generic what ifs" when so many basic features are still missing.
+A Go JSON API backend based on SQLite and sqlc, with session cookies-based user authentication, rate limiters, and user management cli. Postgres is a premature optimization. Rate limiting is likely not future-proof for sharding. Tests take more code than the actual app, which is not right. How to simplify/rewrite this into actually useful authentication service?
 
 ### [surveillance](https://github.com/aabbtree77/surveillance)
 
@@ -45,7 +43,7 @@ A setup to test an IP camera with Motion to store videos on Ubuntu 22.04 with mo
 
 ### auth-starter-backend + frontend
 
-A tiny demo [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. It includes a memo how to set up browser cookies locally and with the HTTPS. Before, I have tried [Astro + Lucia](https://github.com/aabbtree77/session-auth-starter). The problem is still there as most of the Js/Ts metaframeworks do not provide authentication out of the box, and everybody does it differently. Eventually, I have dropped Node in favour of Go + React.
+A tiny demo [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. It includes a memo how to set up browser cookies locally and with the HTTPS. Before, I have tried [Astro + Lucia](https://github.com/aabbtree77/session-auth-starter), but the latest hot thing seems to be better-auth on npm. However, I have dropped Node in favour of Go.
 
 ### [site-redesign-demo](https://github.com/aabbtree77/site-redesign-demo)
 
@@ -53,7 +51,7 @@ This was a multilingual website which I built for a lawyer who spoke nine langua
 
 ### [miniguestlog](https://github.com/aabbtree77/miniguestlog)
 
-A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of aabbtree77.github.io. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind.
+A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of aabbtree77.github.io. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind. MERN has lost popularity to Next.js, but the latter is now challenged by TanStack Start. Endless churn. 
 
 ### [adast](https://github.com/aabbtree77/adast)
 
@@ -61,11 +59,11 @@ A joint work with Saulius Rakauskas (Infovega). We have been maintaining a _real
 
 ### [esp32-vpn](https://github.com/aabbtree77/esp32-vpn)
 
-A joint work with Saulius Rakauskas (Infovega): A remote plant watering system with ESP32, MicroPython, Mosquitto MQTT, Ubuntu and [awl](https://github.com/anywherelan/awl) with golibp2p. Numerous tests of [hole punching](<https://en.wikipedia.org/wiki/Hole_punching_(networking)>) through layers of routers with the use of the P2P network other than torrents, to control an ESP32 device globally, without obscure 3rd party services.
+A joint work with Saulius Rakauskas (Infovega): A remote plant watering system with ESP32, MicroPython, Mosquitto MQTT, Ubuntu and [awl](https://github.com/anywherelan/awl) with golibp2p. Numerous tests of [hole punching](<https://en.wikipedia.org/wiki/Hole_punching_(networking)>) through layers of routers, to control an ESP32 device globally, without obscure 3rd party services.
 
 ### [twinpeekz2](https://github.com/aabbtree77/twinpeekz2)
 
-A rewrite of [twinpeekz](https://github.com/aabbtree77/twinpeekz) in Nim. Nim is a beautiful low level language, among very few (along with D?) which are also succinct. The libs are scarce and often hard to decipher though.
+A rewrite of [twinpeekz](https://github.com/aabbtree77/twinpeekz) in Nim. Nim is a beautiful low level language, among very few (along with D?) which are also succinct. The libs are scarce and often hard to decipher though. Memory management, async/parallelism, some questions there.
 
 ### [twinpeekz](https://github.com/aabbtree77/twinpeekz)
 
