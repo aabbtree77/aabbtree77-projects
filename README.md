@@ -15,9 +15,9 @@ I studied electrical engineering in Lithuania from 1994 to 1999, researched mach
 
 I got mildly inspired by Nikhil Barthwal's talk "Building Your Own Trading Bot in F#" and fancied the idea of building my own bot in Go. One can find spec.md (README.md) which is a result of a long discussion with ChatGPT5, emphasizing correct trading data-action resyncing rather than dogfight with latencies. I am not much of a trader, so I am leaving this as it is, but this could be a fascinating theme for a PhD thesis or just building a real-time distributed system.
 
-The toughest thing is async/parallelism, and in this regard a worthy reading is
+Another worthy reading:
 
-"Go vs Rust in 2026: I Built the Same High-Traffic Service in Both — One Made Me Sleep Better" by Yusuf Seyitoğlu.
+["Go vs Rust in 2026: I Built the Same High-Traffic Service in Both — One Made Me Sleep Better" by Yusuf Seyitoğlu.](https://blog.stackademic.com/go-vs-rust-in-2026-i-built-the-same-high-traffic-service-in-both-one-made-me-sleep-better-006fade70bcf)
 
 ### [opt and initialsdb](https://github.com/aabbtree77/opt)
 
