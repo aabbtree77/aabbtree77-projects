@@ -13,7 +13,13 @@ I studied electrical engineering in Lithuania from 1994 to 1999, researched mach
 
 ### [cryptobot](https://github.com/aabbtree77/cryptobot)
 
-I got mildly inspired by Nikhil Barthwal's talk "Building Your Own Trading Bot in F#" and fancied the idea of building my own bot in Go. One can find spec.md (README.md) which is a result of a long discussion with ChatGPT5, emphasizing correct trading data-action resyncing rather than dogfight with latencies. I am not much of a trader, so I am leaving this as it is, but this could be a fascinating theme for a PhD thesis or just building a real-time distributed system.
+I got mildly inspired by Nikhil Barthwal's 
+
+["Building Your Own Trading Bot in F#"](https://www.youtube.com/watch?v=iyx2qIv8DDw) 
+
+and fancied the idea of building my own bot in Go. 
+
+One can find spec.md (README.md) which is a result of a long discussion with ChatGPT5, emphasizing trading data-action resyncing rather than a dogfight with latencies. I am not much of a trader, so I am leaving this as it is, but this could be a fascinating theme for a PhD thesis or just building a real-time distributed system.
 
 Another worthy reading:
 
