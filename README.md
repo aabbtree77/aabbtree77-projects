@@ -13,45 +13,41 @@ I studied electrical engineering in Lithuania from 1994 to 1999, researched mach
 
 ### [cryptobot](https://github.com/aabbtree77/cryptobot)
 
-I got mildly inspired by Nikhil Barthwal's 
+I got mildly inspired by Nikhil Barthwal's
 
-["Building Your Own Trading Bot in F#"](https://www.youtube.com/watch?v=iyx2qIv8DDw) 
+["Building Your Own Trading Bot in F#"](https://www.youtube.com/watch?v=iyx2qIv8DDw)
 
-and fancied the idea of building my own bot in Go. 
+and fancied the idea of building my own bot in Go.
 
-One can find spec.md (README.md) which is a result of a long discussion with ChatGPT5, emphasizing trading data-action resyncing rather than a dogfight with latencies. I am not much of a trader, so I am leaving this as it is, but this could be a fascinating theme for a PhD thesis or just building a real-time distributed system.
-
-Another worthy reading:
-
-["Go vs Rust in 2026: I Built the Same High-Traffic Service in Both — One Made Me Sleep Better" by Yusuf Seyitoğlu.](https://blog.stackademic.com/go-vs-rust-in-2026-i-built-the-same-high-traffic-service-in-both-one-made-me-sleep-better-006fade70bcf)
+One can find spec.md (README.md) which is a result of a long discussion with ChatGPT5, emphasizing trading data-action resyncing rather than dogfight with latencies. Not much of a trader, leaving this as it is. This could be a fascinating theme for a PhD thesis or just building a real-time distributed system. Lots of async, lots of exchanges, lots of real data.
 
 ### [opt and initialsdb](https://github.com/aabbtree77/opt)
 
 This is a message store (CRUD without UD), which ran on Hetzner 24/7 as _initials.dev_ for three months to test the technology stack. The repo includes code and infrastructure needed to host it. There are five or six Makefiles, each for a different environment: build, debug, dev, prod, copying stuff to vps. I have also applied Docker Compose, but plain minimal use of Docker with Makefiles would have been fine too (to avoid debugging YAML...).
 
-A VPS gives 20x more bandwidth while costing 4x less than serverless, not to mention better sleep at night due to DDoS and cold starts, but all this comes at the price of designing everything from scratch (decisions whether Postgres runs per app or whole VPS, ssh and folder layouts, secret management etc. and etc.). So no miracles here, only tradeoffs. 
+A VPS gives 20x more bandwidth while costing 4x less than serverless, not to mention better sleep at night due to DDoS and cold starts, but all this comes at the price of designing everything from scratch. Not a big deal per se, but this takes time, and the end result is not as pretty or convenient as Render/Vercel GUIs with youtube and AI as docs. So no miracles here, only tradeoffs.
 
 Go is absolutely better than Node. I feel desire to drop React, but how to guarantee accessibility without it?
 
 ### [schatzhauser](https://github.com/aabbtree77/schatzhauser)
 
-A Go JSON API backend based on SQLite and sqlc, with session cookies-based user authentication, rate limiters, and user management cli. Postgres is a premature optimization. Rate limiting is likely not future-proof for sharding. Tests take more code than the actual app, which is not right. How to simplify/rewrite this into actually useful authentication service?
+A Go JSON API backend based on SQLite and sqlc, with session cookies-based user authentication, rate limiters, and user management cli. Postgres is a premature optimization. Rate limiting here is not future-proof for sharding. Tests take more code than the actual app, which is also not right. How to simplify/rewrite this into actually useful authentication service?
 
 ### [surveillance](https://github.com/aabbtree77/surveillance)
 
-A setup to test an IP camera with Motion to store videos on Ubuntu 22.04 with motion detected in them. LAN-based tests, would need AnyDesk, RustDesk, or [anywherelan/awl](https://github.com/anywherelan/awl) (P2P) for remote surveillance.
+Testing an IP camera with Motion to store videos on Ubuntu 22.04 with motion detected in them. LAN-based tests, would need AnyDesk, RustDesk, or [anywherelan/awl](https://github.com/anywherelan/awl) (P2P) for remote surveillance, with very unclear hole punching properties. That is why this space has a lot of commercial products, with cloud and AI and all that mess. Again, no miracles. DIY vs payments.
 
 ### auth-starter-backend + frontend
 
-A tiny demo [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. It includes a memo how to set up browser cookies locally and with the HTTPS. Before, I have tried [Astro + Lucia](https://github.com/aabbtree77/session-auth-starter), but the latest hot thing seems to be better-auth on npm. However, I have dropped Node in favour of Go.
+A tiny demo [backend](https://github.com/aabbtree77/auth-starter-backend) and [frontend](https://github.com/aabbtree77/auth-starter-frontend) for a 3rd party-free username/password authentication. It includes a memo how to set up browser cookies locally and with the HTTPS. Before, I have tried [Astro + Lucia](https://github.com/aabbtree77/session-auth-starter), but the latest hot thing seems to be _better-auth_ on npm. However, I have dropped Node in favour of Go. Too much to write why.
 
 ### [site-redesign-demo](https://github.com/aabbtree77/site-redesign-demo)
 
-This was a multilingual website which I built for a lawyer who spoke nine languages: lawtrust.eu which was itself a rewrite of www.lawlt.eu. Tailwind CSS, [gomarkdown](https://github.com/gomarkdown/markdown), porkbun.com, and github pages, and a lot of tedious translation work with DeepL. This project was an eye opener about the SEO and online visibility. After about a year I have been contacted by one London law firm to put it down as apparently the name "lawtrust" has been trademarked. The lawyer moved to a minimal generic template website which, however, connected him to his Facebook Messenger.
+This was a multilingual website which I built for a lawyer who spoke nine languages: lawtrust.eu which was itself a rewrite of www.lawlt.eu. Tailwind CSS, [gomarkdown](https://github.com/gomarkdown/markdown), porkbun.com, and github pages, and a lot of tedious translation work with DeepL. This project was an eye opener about the SEO and online visibility. After about a year I have been contacted by one London law firm to put it down as apparently the name "lawtrust" has been trademarked. The lawyer moved to a minimal generic template website which, however, connected him to his Facebook Messenger. Considering the year 2026, none of these websites make any sense as they are virtually invisible and very limited. Instead, it is better to open a channel on the relevant platform(s).
 
 ### [miniguestlog](https://github.com/aabbtree77/miniguestlog)
 
-A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of aabbtree77.github.io. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind. MERN has lost popularity to Next.js, but the latter is now challenged by TanStack Start. Endless churn. 
+A MERN app to [record](https://aabbtree77.github.io/miniguestlog/loadGuestsSpinner.html) geolocation of the last 50 visitors of aabbtree77.github.io. MongoDB Atlas, Compass, render.com, github pages, ipify.org, and geoip-lite API for the GeoLite data from MaxMind. MERN has lost popularity to Next.js so rapidly, but the latter is now challenged by TanStack Start. Nothing sticks in this space, except maybe React.
 
 ### [adast](https://github.com/aabbtree77/adast)
 
@@ -63,7 +59,9 @@ A joint work with Saulius Rakauskas (Infovega): A remote plant watering system w
 
 ### [twinpeekz2](https://github.com/aabbtree77/twinpeekz2)
 
-A rewrite of [twinpeekz](https://github.com/aabbtree77/twinpeekz) in Nim. Nim is a beautiful low level language, among very few (along with D?) which are also succinct. The libs are scarce and often hard to decipher though. Memory management, async/parallelism, some questions there.
+A rewrite of [twinpeekz](https://github.com/aabbtree77/twinpeekz) in Nim. Nim is a beautiful low level language, among very few (along with D?) which are also succinct. It is like an ideal personal constructor, but the libs are scarce and often hard to decipher due to macros and clever people. Memory management, async/parallelism have no clear imposed paradigms, which makes the language flexible and universal in theory, but this does not work so well in practice, does it?
+
+Also, Ada/Rust are pushing safety, Zig tries to embrace and extinguish C. Odin/Jai add custom allocators to Pascal and promote 3D. What does Nim solve really? What kind of unique libs does it have? This is not easy to answer and that is the problem.
 
 ### [twinpeekz](https://github.com/aabbtree77/twinpeekz)
 
